@@ -10,16 +10,16 @@
     modules-left = [
       "custom/launcher"
       "hyprland/workspaces"
+      "tray"
     ];
     modules-center = [
       "clock"
     ];
     modules-right = [
-      "tray"
-      "hyprland/language"
       "cpu"
       "memory"
       "disk"
+      "hyprland/language"
       "pulseaudio"
       "network"
     ];
@@ -78,6 +78,12 @@
       };
       scroll-step = 5;
       on-click = "pavucontrol";
+    };
+    "hyprland/language" = {
+      format = "{}";
+      format-en = "🇺🇸";
+      format-ru = "🇷🇺";
+      keyboard-name = "keychron-keychron-q1-keyboard";
     };
     "custom/launcher" = {
       format = "";

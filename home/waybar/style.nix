@@ -31,18 +31,43 @@ in
     }
 
     #workspaces {
-        padding-left: 15px;
+      padding-left: 16px;
     }
+
     #workspaces button {
-        color: ${custom.text_color};
-        padding-left:  6px;
-        padding-right: 6px;
+      box-shadow: none;
+      text-shadow: none;
+      padding: 0px;
+      border-radius: 12px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      padding-left: 4px;
+      padding-right: 4px;
+      color: ${custom.text_color};
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
     }
-    #workspaces button.empty {
-        color: ${custom.button_empty}
-    }
+
     #workspaces button.active {
-        color: ${custom.button_active};
+      background: ${custom.text_color};
+      color: ${custom.background};
+      margin-left: 4px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 4px;
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+    }
+
+    #workspaces button:hover {
+      background: ${custom.tertiary_accent};
+      color: ${custom.background};
+      margin-left: 4px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 4px;
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
     }
 
     #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock {
@@ -51,7 +76,7 @@ in
     }
 
     #cpu {
-        padding-left: 15px;
+        padding-left: 9px;
         padding-right: 9px;
         margin-left: 7px;
     }
@@ -78,7 +103,7 @@ in
         padding-left: 9px;
         padding-right: 15px;
     }
-    
+
     #clock {
         padding-left: 9px;
         padding-right: 15px;
@@ -86,7 +111,7 @@ in
 
     #custom-launcher {
         font-size: 20px;
-        color: #b4befe;
+        color: ${custom.text_color};
         font-weight: ${custom.font_weight};
         padding-left: 10px;
         padding-right: 15px;
