@@ -23,6 +23,7 @@
 
 
       "$mainMod, q, killactive,"
+      ", mouse:274 mouse:273, killactive,"
 
       "$mainMod, h, movefocus, l"
       "$mainMod, l, movefocus, r"
@@ -84,6 +85,16 @@
       "$mainMod shift, tab, workspace, e-1"
       "ALT, tab, workspace, previous"
 
+      # sound
+      ", XF86AudioMute, exec, pamixer -t"
+      ", XF86AudioMicMute, exec, ~/.config/hypr/scripts/volumecontrol.sh -i m " # toggle microphone mute
+      ", XF86AudioLowerVolume, exec, pamixer -d 5"
+      ", XF86AudioRaiseVolume, exec, pamixer -i 5"
+      ", XF86AudioPlay, exec, playerctl play-pause"
+      ", XF86AudioPause, exec, playerctl play-pause"
+      ", XF86AudioNext, exec, playerctl next"
+      ", XF86AudioPrev, exec, playerctl previous"
+
 
       # Special workspaces (scratchpad)
       "$mainMod, m, movetoworkspacesilent, special"
@@ -108,7 +119,7 @@
 
     ];
 
-    # Trigger when the switch is turning off
+    # Trigger when the switch is turning off 
     bindl = [ ", switch:on:Lid Switch, exec, swaylock && systemctl suspend" ];
 
     binde = [
@@ -124,6 +135,7 @@
       # Move/Resize windows with mainMod + LMB/RMB and dragging
       "$mainMod, mouse:272, movewindow"
       "$mainMod, mouse:273, resizewindow"
+      ",mouse:274, movewindow"
     ];
   };
 }

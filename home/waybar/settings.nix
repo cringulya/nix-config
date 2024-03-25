@@ -32,7 +32,7 @@
       active-only = false;
       disable-scroll = true;
       all_inputs = true;
-      format = "{icon}";
+      # format = "{icon}";
       on-click = "activate";
       format-icons = {
         urgent = "";
@@ -76,7 +76,7 @@
         default = [ " " ];
       };
       scroll-step = 5;
-      on-click = "pamixer -t";
+      on-click = "pavucontrol";
     };
     "custom/launcher" = {
       format = "";

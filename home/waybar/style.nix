@@ -6,6 +6,8 @@ let
     text_color = "#cdd6f4";
     secondary_accent = "#89b4fa";
     tertiary_accent = "#f5f5f5";
+    button_empty = "#6c7086";
+    button_active = "#b4befe";
     background = "#11111B";
     opacity = "0.98";
   };
@@ -28,21 +30,38 @@ in
         background: none;
     }
 
-    #workspaces {
-        font-size: 18px;
-        padding-left: 15px;
-        
-    }
     #workspaces button {
-        color: ${custom.text_color};
-        padding-left:  6px;
-        padding-right: 6px;
+      box-shadow: none;
+      text-shadow: none;
+      padding: 0px;
+      border-radius: 12px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      padding-left: 4px;
+      padding-right: 4px;
+      color: ${custom.button_empty};
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
     }
-    #workspaces button.empty {
-        color: #6c7086;
-    }
+
     #workspaces button.active {
-        color: #b4befe;
+    background: ${custom.background};
+      color: ${custom.button_active};
+      margin-left: 4px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-right: 4px;
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+    }
+
+    #workspaces button:hover {
+      background: ${custom.background};
+      color: @wb-hvr-fg;
+      padding-left: 4px;
+      padding-right: 4px;
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
     }
 
     #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock {
