@@ -12,7 +12,7 @@
       "$mainMod, G, togglegroup," # toggle the window on focus to float
       "$mainMod, F, fullscreen," # toggle the window on focus to fullscreen
       "$mainMod, P, pin"
-      "$mainMod, backspace, exec, ~/.config/hypr/scripts/logoutlaunch.sh 1" # logout menu
+      "$mainMod, backspace, exec, wlogout"
       "$mainMod, B, exec, killall .waybar-wrapped || waybar" # toggle waybar
 
       # Application shortcuts

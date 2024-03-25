@@ -10,6 +10,8 @@
     starship
     cargo
 
+    wlogout
+
     gcc
     gnumake
     python3
