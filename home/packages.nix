@@ -8,11 +8,12 @@
     todo
     ripgrep
     starship
-    cargo
+    wget
 
     wlogout
 
     gcc
+    cargo
     gnumake
     python3
     lua
@@ -36,6 +37,5 @@
     man-pages # extra man pages
     mpv # video player
     ncdu # disk space
-    wget
   ]);
 }

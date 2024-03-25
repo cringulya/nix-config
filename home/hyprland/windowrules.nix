@@ -1,6 +1,10 @@
 {
   wayland.windowManager.hyprland.settings = {
-    workspace = "3, monitor:DP-2, default:true";
+    workspace = [
+      "1, monitor:HDMI-A-1, default:true"
+      "2, monitor:HDMI-A-1, default:false"
+      "3, monitor:DP-2, default:true"
+    ];
 
     windowrulev2 = [
       "float, title:^(Picture-in-Picture)$"

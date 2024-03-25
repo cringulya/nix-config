@@ -16,6 +16,7 @@
     ];
     modules-right = [
       "tray"
+      "hyprland/language"
       "cpu"
       "memory"
       "disk"

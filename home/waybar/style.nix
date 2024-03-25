@@ -30,38 +30,19 @@ in
         background: none;
     }
 
+    #workspaces {
+        padding-left: 15px;
+    }
     #workspaces button {
-      box-shadow: none;
-      text-shadow: none;
-      padding: 0px;
-      border-radius: 12px;
-      margin-top: 4px;
-      margin-bottom: 4px;
-      padding-left: 4px;
-      padding-right: 4px;
-      color: ${custom.button_empty};
-      animation: gradient_f 20s ease-in infinite;
-      transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+        color: ${custom.text_color};
+        padding-left:  6px;
+        padding-right: 6px;
     }
-
+    #workspaces button.empty {
+        color: ${custom.button_empty}
+    }
     #workspaces button.active {
-    background: ${custom.background};
-      color: ${custom.button_active};
-      margin-left: 4px;
-      padding-left: 16px;
-      padding-right: 16px;
-      margin-right: 4px;
-      animation: gradient_f 20s ease-in infinite;
-      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-    }
-
-    #workspaces button:hover {
-      background: ${custom.background};
-      color: @wb-hvr-fg;
-      padding-left: 4px;
-      padding-right: 4px;
-      animation: gradient_f 20s ease-in infinite;
-      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+        color: ${custom.button_active};
     }
 
     #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock {

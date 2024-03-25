@@ -4,13 +4,14 @@
   imports = [
     ./packages.nix
     ./style.nix
-    ./hyprland/default.nix
-    ./fish/default.nix
-    ./kitty/default.nix
-    ./waybar/default.nix
-    ./wofi/default.nix
-    ./btop/default.nix
-    ./mako/default.nix
+    ./hyprland
+    ./fish
+    ./kitty
+    ./waybar
+    ./wofi
+    ./btop
+    ./mako
+    ./scripts
   ];
 
   nixpkgs = {
@@ -154,31 +155,31 @@
       IncludeIsMainRegex: '([-_](test|unittest))?$'
       IncludeIsMainSourceRegex: '''
       IndentAccessModifiers: false
-        IndentCaseBlocks: false
-          IndentCaseLabels: true
-            IndentExternBlock: AfterExternBlock
-              IndentGotoLabels: true
-                IndentPPDirectives: None
-                  IndentRequiresClause: true
-                    IndentWidth: 2
-                      IndentWrappedFunctionNames: false
-                        InsertBraces: false
-                          InsertNewlineAtEOF: false
-                            InsertTrailingCommas: None
-                              IntegerLiteralSeparator:
-                              Binary: 0
-                                BinaryMinDigits: 0
-                                  Decimal: 0
-                                    DecimalMinDigits: 0
-                                      Hex: 0
-                                        HexMinDigits: 0
-                                          JavaScriptQuotes: Leave
-                                            JavaScriptWrapImports: true
-                                              KeepEmptyLinesAtTheStartOfBlocks: false
-                                                KeepEmptyLinesAtEOF: false
-                                                  LambdaBodyIndentation: Signature
-                                                    LineEnding: DeriveLF
-                                                      MacroBlockBegin: '''
+      IndentCaseBlocks: false
+      IndentCaseLabels: true
+      IndentExternBlock: AfterExternBlock
+      IndentGotoLabels: true
+      IndentPPDirectives: None
+      IndentRequiresClause: true
+      IndentWidth: 2
+      IndentWrappedFunctionNames: false
+      InsertBraces: false
+      InsertNewlineAtEOF: false
+      InsertTrailingCommas: None
+      IntegerLiteralSeparator:
+        Binary: 0
+        BinaryMinDigits: 0
+        Decimal: 0
+        DecimalMinDigits: 0
+        Hex: 0
+        HexMinDigits: 0
+      JavaScriptQuotes: Leave
+      JavaScriptWrapImports: true
+      KeepEmptyLinesAtTheStartOfBlocks: false
+      KeepEmptyLinesAtEOF: false
+      LambdaBodyIndentation: Signature
+      LineEnding: DeriveLF
+      MacroBlockBegin: '''
       MacroBlockEnd: '''
           MaxEmptyLinesToKeep: 1
             NamespaceIndentation: None

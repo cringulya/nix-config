@@ -1,5 +1,15 @@
+{ pkgs, ... }:
+
 {
-  imports = [ (import ./waybar.nix) ]
-    ++ [ (import ./settings.nix) ]
-    ++ [ (import ./style.nix) ];
+  imports = [
+    ./config.nix
+    ./style.nix
+  ];
+
+  programs.waybar = {
+    enable = true;
+  };
+  programs.waybar.package = pkgs.waybar.overrideAttrs (oa: {
+    mesonFlags = (oa.mesonFlags or [ ]) ++ [ "-Dexperimental=true" ];
+  });
 }
