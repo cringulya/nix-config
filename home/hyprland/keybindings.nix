@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
@@ -23,7 +25,6 @@
 
 
       "$mainMod, q, killactive,"
-      ", mouse:274 mouse:273, killactive,"
 
       "$mainMod, h, movefocus, l"
       "$mainMod, l, movefocus, r"
@@ -76,6 +77,10 @@
       "$mainMod SHIFT, l, movewindow, r"
       "$mainMod SHIFT, k, movewindow, u"
       "$mainMod SHIFT, j, movewindow, d"
+
+      # screenshots
+      "$mainMod SHIFT, 3, exec, ${pkgs.grimblast}/bin/grimblast --notify --cursor  copy area"
+      ",Print, exec, grimblast --notify --cursor copy output"
 
       # Scroll through existing workspaces with mainMod + scroll
       "$mainMod, mouse_down, workspace, e-1"
@@ -135,7 +140,6 @@
       # Move/Resize windows with mainMod + LMB/RMB and dragging
       "$mainMod, mouse:272, movewindow"
       "$mainMod, mouse:273, resizewindow"
-      ",mouse:274, movewindow"
     ];
   };
 }

@@ -11,6 +11,9 @@
     wget
 
     wlogout
+    swww
+    grimblast
+    slurp
 
     gcc
     cargo
@@ -27,11 +30,13 @@
     lua-language-server
 
     obs-studio
+    firefox
     spotify
     yazi
     telegram-desktop
     vesktop
     ffmpeg
+    zathura
     imv # image viewer
     libnotify
     man-pages # extra man pages

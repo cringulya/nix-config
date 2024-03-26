@@ -10,10 +10,8 @@
     sbctl
     git
     neovim
-    wofi
     btop
     killall
-    firefox
     pavucontrol
     pamixer
     home-manager

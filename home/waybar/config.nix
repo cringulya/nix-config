@@ -10,12 +10,13 @@
     modules-left = [
       "custom/launcher"
       "hyprland/workspaces"
-      "tray"
+      "wlr/taskbar"
     ];
     modules-center = [
       "clock"
     ];
     modules-right = [
+      "tray"
       "cpu"
       "memory"
       "disk"
@@ -44,6 +45,16 @@
         "1" = [ ];
       };
     };
+    "wlr/taskbar" = {
+      format = "{icon}";
+      icon-size = 24;
+      spacing = 8;
+      # icon-theme = "Papirus-Dark";
+      tooltip-format = "{title}";
+      on-click = "activate";
+      on-click-middle = "close";
+      ignore-list = [ "kitty" ];
+    };
     memory = {
       format = "󰟜 {}%";
       format-alt = "󰟜 {used} GiB"; # 
@@ -55,7 +66,7 @@
       interval = 2;
     };
     disk = {
-      # path = "/";
+      path = "/";
       format = "󰋊 {percentage_used}%";
       interval = 60;
     };
@@ -67,7 +78,7 @@
       format-disconnected = "󰖪 ";
     };
     tray = {
-      icon-size = 20;
+      icon-size = 24;
       spacing = 8;
     };
     pulseaudio = {

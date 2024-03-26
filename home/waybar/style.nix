@@ -65,6 +65,42 @@ in
       margin-left: 4px;
       padding-left: 10px;
       padding-right: 10px;
+      margin-right: 8px;
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+    }
+
+    #taskbar button {
+      box-shadow: none;
+      text-shadow: none;
+      padding: 0px;
+      border-radius: 12px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      padding-left: 8px;
+      padding-right: 4px;
+      color: ${custom.text_color};
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+    }
+
+    #taskbar button.active {
+      background: ${custom.text_color};
+      color: ${custom.text_color};
+      margin-left: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-right: 4px;
+      animation: gradient_f 20s ease-in infinite;
+      transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+    }
+
+    #taskbar button:hover {
+      background: ${custom.tertiary_accent};
+      color: ${custom.secondary_accent};
+      margin-left: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
       margin-right: 4px;
       animation: gradient_f 20s ease-in infinite;
       transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);

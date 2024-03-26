@@ -27,6 +27,7 @@
 
 
   home.file = {
+    "wallpapers".source = ../wallpapers;
     ".clang-format".text = ''
       ---
       Language:        Cpp
