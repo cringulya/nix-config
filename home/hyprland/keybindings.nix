@@ -79,7 +79,7 @@
       "$mainMod SHIFT, j, movewindow, d"
 
       # screenshots
-      "$mainMod SHIFT, 3, exec, ${pkgs.grimblast}/bin/grimblast --notify --cursor  copy area"
+      "SHIFT ALT, 3, exec, ${pkgs.grimblast}/bin/grimblast --notify --cursor  copy area"
       ",Print, exec, grimblast --notify --cursor copy output"
 
       # Scroll through existing workspaces with mainMod + scroll
@@ -91,14 +91,14 @@
       "ALT, tab, workspace, previous"
 
       # sound
-      ", XF86AudioMute, exec, pamixer -t"
+      ", XF86AudioMute, exec, ${pkgs.pamixer}/bin/pamixer -t"
       ", XF86AudioMicMute, exec, ~/.config/hypr/scripts/volumecontrol.sh -i m " # toggle microphone mute
-      ", XF86AudioLowerVolume, exec, pamixer -d 5"
-      ", XF86AudioRaiseVolume, exec, pamixer -i 5"
-      ", XF86AudioPlay, exec, playerctl play-pause"
-      ", XF86AudioPause, exec, playerctl play-pause"
-      ", XF86AudioNext, exec, playerctl next"
-      ", XF86AudioPrev, exec, playerctl previous"
+      ", XF86AudioLowerVolume, exec, ${pkgs.pamixer}/binpamixer -d 5"
+      ", XF86AudioRaiseVolume, exec, ${pkgs.pamixer}/binpamixer -i 5"
+      ", XF86AudioPlay, exec, ${pkgs.playerctl}/bin/playerctl play-pause"
+      ", XF86AudioPause, exec, ${pkgs.playerctl}/bin/playerctl play-pause"
+      ", XF86AudioNext, exec, ${pkgs.playerctl}/bin/playerctl next"
+      ", XF86AudioPrev, exec, ${pkgs.playerctl}/bin/playerctl previous"
 
 
       # Special workspaces (scratchpad)

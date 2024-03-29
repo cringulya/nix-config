@@ -37,6 +37,7 @@
     vesktop
     ffmpeg
     zathura
+    teams-for-linux
     imv # image viewer
     libnotify
     man-pages # extra man pages

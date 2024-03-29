@@ -27,7 +27,7 @@
 
 
   home.file = {
-    "wallpapers".source = ../wallpapers;
+    ".wallpapers".source = ../wallpapers;
     ".clang-format".text = ''
       ---
       Language:        Cpp
@@ -315,6 +315,7 @@
       userName = "p0pusk";
       userEmail = "s0sis0n@yandex.ru";
     };
+    firefox.enable = true;
   };
 
 

@@ -3,7 +3,9 @@
     workspace = [
       "1, monitor:HDMI-A-1, default:true"
       "2, monitor:HDMI-A-1, default:false"
-      "3, monitor:DP-2, default:true"
+      "3, monitor:HDMI-A-1, default:false"
+      "4, monitor:DP-2, default:true"
+      "5, monitor:DP-2, default:false"
     ];
 
     windowrulev2 = [
