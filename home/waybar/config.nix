@@ -88,7 +88,7 @@
         default = [ " " ];
       };
       scroll-step = 5;
-      on-click = "pavucontrol";
+      on-click = "pavucontrol -t 3";
     };
     "hyprland/language" = {
       format = "{}";

@@ -12,6 +12,7 @@
     ./btop
     ./mako
     ./scripts
+    ./zathura
   ];
 
   nixpkgs = {

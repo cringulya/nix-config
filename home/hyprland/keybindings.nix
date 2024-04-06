@@ -93,8 +93,8 @@
       # sound
       ", XF86AudioMute, exec, ${pkgs.pamixer}/bin/pamixer -t"
       ", XF86AudioMicMute, exec, ~/.config/hypr/scripts/volumecontrol.sh -i m " # toggle microphone mute
-      ", XF86AudioLowerVolume, exec, ${pkgs.pamixer}/binpamixer -d 5"
-      ", XF86AudioRaiseVolume, exec, ${pkgs.pamixer}/binpamixer -i 5"
+      ", XF86AudioLowerVolume, exec, ${pkgs.pamixer}/bin/pamixer -d 5"
+      ", XF86AudioRaiseVolume, exec, ${pkgs.pamixer}/bin/pamixer -i 5"
       ", XF86AudioPlay, exec, ${pkgs.playerctl}/bin/playerctl play-pause"
       ", XF86AudioPause, exec, ${pkgs.playerctl}/bin/playerctl play-pause"
       ", XF86AudioNext, exec, ${pkgs.playerctl}/bin/playerctl next"

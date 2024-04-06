@@ -27,7 +27,7 @@
       "opacity 0.80 0.80,class:^(steam)$"
       "opacity 0.80 0.80,class:^(org.pwmt.zathura)$"
       "opacity 0.80 0.80,class:^(steamwebhelper)$"
-      "opacity 0.80 0.80,class:^(Spotify)$"
+      "opacity 0.80 0.80,class:^(Spotify Premium)$"
       "opacity 0.80 0.80,class:^(Code)$"
       "opacity 0.80 0.80,class:^(code-url-handler)$"
       "opacity 0.80 0.80,class:^(kitty)$"
@@ -80,8 +80,7 @@
       "nodim,class:^(firefox)$"
       "nodim,class:^(WebCord)$ #WebCord-Electron"
       "monitor 1,class:^(WebCord)$ #WebCord-Electron"
-      "workspace 5, class:^(Spotify)$"
-      "monitor 1, class:^(Spotify)$"
+      "workspace 5, class:^(Spotify Premium)$"
 
 
       "workspace 5,class:^(org.telegram.desktop)$"
