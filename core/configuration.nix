@@ -71,6 +71,15 @@
   };
 
 
+  zramSwap = {
+    enable = true;
+    algorithm = "lz4";
+  };
+
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.allowReboot = true;
+
+
   programs = {
     fish.enable = true;
     gnupg.agent = {

@@ -13,6 +13,7 @@
     ./mako
     ./scripts
     ./zathura
+    ./wlogout
   ];
 
   nixpkgs = {

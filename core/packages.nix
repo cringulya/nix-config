@@ -17,6 +17,7 @@
     home-manager
     nix-prefetch-git
     wl-clipboard
+    nix-index
 
     #sddm-theme dependencies
     libsForQt5.qt5.qtquickcontrols2

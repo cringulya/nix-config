@@ -21,14 +21,19 @@
     gnumake
     python3
     lua
+    julia
     nodePackages.npm
     clang-tools
     cmake
     gdb
+    texliveFull
 
     #nvim
     stylua
+    nil
     lua-language-server
+    texlab
+
 
     obs-studio
     firefox
@@ -45,5 +50,7 @@
     ncdu # disk space
 
     antlr4
+
+    cm_unicode
   ]);
 }
