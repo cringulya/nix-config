@@ -21,12 +21,14 @@
     gnumake
     python3
     lua
-    julia
+    julia-bin
+    nodejs
     nodePackages.npm
     clang-tools
     cmake
     gdb
     texliveFull
+    cudaPackages.cuda_nvcc
 
     #nvim
     stylua
@@ -37,6 +39,7 @@
 
     obs-studio
     firefox
+    brave
     spotify
     yazi
     telegram-desktop
