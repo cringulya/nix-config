@@ -33,6 +33,7 @@
     #nvim
     stylua
     nil
+    nixpkgs-fmt
     lua-language-server
     texlab
 

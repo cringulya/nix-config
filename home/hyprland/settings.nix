@@ -1,8 +1,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     monitor = [
-      "HDMI-A-1,highrr,1080x0,auto"
-      "DP-2, 1920x1080, 0x-420, 1, transform, 1"
+      "DP-3,highrr,1080x0,auto"
+      "DP-7, 1920x1080, 0x-420, 1, transform, 1"
     ];
 
     input = {
