@@ -5,7 +5,7 @@
     "$mainMod" = "SUPER";
     "$term" = "kitty";
     "$file" = "kitty -- yazi";
-    "$browser" = "firefox";
+    "$browser" = "brave";
 
     bind = [
       "ALT, space, exec, pkill wofi || wofi --show drun"

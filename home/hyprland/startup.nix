@@ -9,6 +9,7 @@
       "sleep 1 && swaylock"
       "waybar"
       "swww init"
+      "sleep 1"
       "swww img ~/.wallpapers/nix-colored.png"
     ];
   };
