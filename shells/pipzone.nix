@@ -3,10 +3,21 @@
 (pkgs.buildFHSUserEnv {
   name = "pipzone";
   targetPkgs = pkgs: (with pkgs; [
-    python39
-    python39Packages.pip
-    python39Packages.virtualenv
-    cudaPackages.cudatoolkit
+    zlib
+    sox
+    (python3.withPackages (p: with p; [
+      pip
+      virtualenv
+      pandas
+      numpy
+      scikit-learn
+      anyqt
+      torch
+      torch-audiomentations
+      torchaudio
+      librosa
+      xgboost
+    ]))
   ]);
-  runScript = "bash";
+  runScript = "fish";
 }).env

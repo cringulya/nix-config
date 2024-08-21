@@ -14,7 +14,6 @@
     ./scripts
     ./zathura
     ./wlogout
-    ./shells
   ];
 
   nixpkgs = {

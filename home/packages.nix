@@ -19,7 +19,6 @@
     gcc
     cargo
     gnumake
-    python3
     lua
     julia-bin
     nodejs
@@ -30,15 +29,33 @@
     texliveFull
     cudaPackages.cuda_nvcc
 
+    (pkgs.python3.withPackages (python-pkgs: [
+      python-pkgs.pip
+      python-pkgs.virtualenv
+      python-pkgs.pandas
+      python-pkgs.numpy
+      python-pkgs.scikit-learn
+      python-pkgs.torch
+      python-pkgs.torch-audiomentations
+      python-pkgs.torchaudio
+      python-pkgs.librosa
+      python-pkgs.xgboost
+    ]))
+    zlib
+
     #nvim
     stylua
     nil
     nixpkgs-fmt
     lua-language-server
     texlab
+    pyright
+    black
 
 
     obs-studio
+    libreoffice-fresh
+    openrgb-with-all-plugins
     firefox
     brave
     spotify
@@ -52,8 +69,7 @@
     man-pages # extra man pages
     mpv # video player
     ncdu # disk space
-
-    antlr4
+    steam
 
     cm_unicode
   ]);

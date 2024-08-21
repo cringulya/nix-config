@@ -22,7 +22,7 @@
 
       "opacity 0.90 0.90,class:^(firefox)$"
       "opacity 0.80 0.80,class:^(org.telegram.desktop)$"
-      "opacity 0.80 0.80,class:^(Brave-browser-nightly)$"
+      "opacity 0.80 0.80,class:^(brave-browser)$"
       "opacity 0.80 0.80,class:^(Steam)$"
       "opacity 0.80 0.80,class:^(steam)$"
       "opacity 0.80 0.80,class:^(org.pwmt.zathura)$"
@@ -76,7 +76,7 @@
 
       "workspace 2, class:^(firefox)$"
       "nodim,class:^(firefox)$"
-      "workspace 2, class:^(Brave-browser-nightly)$"
+      "workspace 2, class:^(brave-browser)$"
       "nodim,class:^(firefox)$"
       "nodim,class:^(WebCord)$ #WebCord-Electron"
       "monitor 1,class:^(WebCord)$ #WebCord-Electron"
