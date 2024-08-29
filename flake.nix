@@ -2,7 +2,7 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     lanzaboote = {
       url = "github:nix-community/lanzaboote/v0.3.0";
@@ -22,8 +22,6 @@
 
   outputs = inputs@{ self, nixpkgs, nix-darwin, lanzaboote, home-manager, ... }:
     let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
       username = "artemson";
       inherit (self) outputs;
     in
@@ -36,23 +34,34 @@
       };
 
       # Build darwin flake using:
-      # $ darwin-rebuild build --flake .#Artems-MacBook-Air
-      darwinConfigurations."Artems-MacBook-Air" = nix-darwin.lib.darwinSystem {
+      # $ darwin-rebuild build --flake .
+      darwinConfigurations."abobus-mb" = nix-darwin.lib.darwinSystem {
         specialArgs = { inherit inputs outputs; };
-        modules = [ ./core/macos/configuration.nix ];
+        modules = [
+          ./core/darwin/configuration.nix
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.artemson = import ./home/darwin-home.nix;
+
+            # Optionally, use home-manager.extraSpecialArgs to pass
+            # arguments to home.nix
+          }
+        ];
       };
 
       # Expose the package set, including overlays, for convenience.
-      darwinPackages = self.darwinConfigurations."Artems-MacBook-Air".pkgs;
+      # darwinPackages = self.darwinConfigurations."abobus-mb".pkgs;
 
-      homeConfigurations = {
-        "artemson@abobus" = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          extraSpecialArgs = { inherit inputs outputs; };
-          modules = [
-            ./home/home.nix
-          ];
-        };
-      };
+      # homeConfigurations = {
+      #   "artemson@abobus" = home-manager.lib.homeManagerConfiguration {
+      #     inherit pkgs;
+      #     extraSpecialArgs = { inherit inputs outputs; };
+      #     modules = [
+      #       ./home/linux-home.nix
+      #     ];
+      #   };
+      # };
     };
 }

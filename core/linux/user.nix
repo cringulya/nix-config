@@ -5,7 +5,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     extraSpecialArgs = { inherit inputs; };
-    users.artemson = import ../home/home.nix;
+    users.artemson = import ../home/linux-home.nix;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.

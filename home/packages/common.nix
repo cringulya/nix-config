@@ -3,18 +3,11 @@
 {
   home.packages = (with pkgs; [
     unzip
-    fish
     fzf
     todo
     ripgrep
     starship
     wget
-    neofetch
-
-    wlogout
-    swww
-    grimblast
-    slurp
 
     gcc
     cargo
@@ -25,9 +18,9 @@
     nodePackages.npm
     clang-tools
     cmake
-    gdb
     texliveFull
-    cudaPackages.cuda_nvcc
+    ffmpeg
+    man-pages # extra man pages
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pip
@@ -36,12 +29,10 @@
       python-pkgs.numpy
       python-pkgs.scikit-learn
       python-pkgs.torch
-      python-pkgs.torch-audiomentations
       python-pkgs.torchaudio
       python-pkgs.librosa
       python-pkgs.xgboost
     ]))
-    zlib
 
     #nvim
     stylua
@@ -51,26 +42,12 @@
     texlab
     pyright
     black
+    tree-sitter
 
-
-    obs-studio
-    libreoffice-fresh
-    openrgb-with-all-plugins
-    firefox
-    brave
     spotify
     yazi
     telegram-desktop
-    vesktop
-    ffmpeg
-    teams-for-linux
-    imv # image viewer
-    libnotify
-    man-pages # extra man pages
-    mpv # video player
-    ncdu # disk space
-    steam
 
-    cm_unicode
+    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
   ]);
 }
