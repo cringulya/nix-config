@@ -31,7 +31,7 @@
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs username; };
         modules = [
-          ./core/configuration.nix
+          ./core/linux/configuration.nix
         ];
       };
 

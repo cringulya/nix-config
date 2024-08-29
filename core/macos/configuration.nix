@@ -27,9 +27,10 @@
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = "x86_64-darwin";
 
-  security.pam.enableSudoTouchIdAuth = true;
-
   imports = [
+    ./preferences.nix
+    ./packages.nix
+    ./homebrew.nix
     ./yabai.nix
     ./skhd.nix
   ];
