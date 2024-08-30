@@ -4,6 +4,7 @@
   home.packages = (with pkgs; [
     unzip
     fzf
+    fd
     todo
     ripgrep
     starship
@@ -13,6 +14,7 @@
     cargo
     gnumake
     lua
+    lldb
     julia-bin
     nodejs
     nodePackages.npm
