@@ -12,10 +12,18 @@
 
   home.sessionVariables = { EDITOR = "nvim"; };
 
-  programs.git = {
-    enable = true;
-    userName = "p0pusk";
-    userEmail = "s0sis0n@yandex.ru";
+  programs = {
+    git = {
+      enable = true;
+      userName = "p0pusk";
+      userEmail = "s0sis0n@yandex.ru";
+    };
+
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+      enableFishIntegration = true;
+    };
   };
 
   nixpkgs = {

@@ -11,6 +11,7 @@
       ll = "ls -l";
       vi = "nvim";
       py = "python3";
+      cd = "z";
     };
   };
 }
