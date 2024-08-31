@@ -1,11 +1,7 @@
 { pkgs, ... }:
 
 {
-  imports = [
-    ./common.nix
-    ./sketchybar
-    ./packages/darwin.nix
-  ];
+  imports = [ ./common.nix ./sketchybar ./packages/darwin.nix ];
 
   home.username = "artemson";
   home.homeDirectory = "/Users/artemson";

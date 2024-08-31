@@ -18,6 +18,11 @@
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim-flake = {
+      url = "github:p0pusk/nixvim-config";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{ self, nixpkgs, nix-darwin, lanzaboote, home-manager, ... }:
@@ -28,15 +33,13 @@
     {
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs username; };
-        modules = [
-          ./core/linux/configuration.nix
-        ];
+        modules = [ ./core/linux/configuration.nix ];
       };
 
       # Build darwin flake using:
       # $ darwin-rebuild build --flake .
       darwinConfigurations."abobus-mb" = nix-darwin.lib.darwinSystem {
-        specialArgs = { inherit inputs outputs; };
+        specialArgs = { inherit inputs outputs; system = "aarch64-darwin"; };
         modules = [
           ./core/darwin/configuration.nix
           home-manager.darwinModules.home-manager

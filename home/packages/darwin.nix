@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, inputs, system, ... }:
 
 {
-  home.packages = (with pkgs; [
-
-  ]);
+  home.packages = [
+    # inputs.nixvim-flake.packages.${system}.default
+  ];
 }

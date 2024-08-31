@@ -61,8 +61,6 @@
 
       yabai -m rule --add app="^Arc$" opacity=0.98 space=^2
       yabai -m rule --add app="^Spotify$" space=^5
-
-      borders active_color=0x9c6942f5 inactive_color=0xff494d64 width=5.0 &
     '';
   };
 }

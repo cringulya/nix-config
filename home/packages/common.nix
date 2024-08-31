@@ -48,7 +48,6 @@
 
     spotify
     yazi
-    telegram-desktop
 
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
   ]);

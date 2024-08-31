@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }: {
+{ inputs, pkgs, system, ... }: {
 
   users.users.artemson = {
     name = "artemson";
@@ -25,7 +25,7 @@
   system.stateVersion = 4;
 
   # The platform the configuration will be used on.
-  nixpkgs.hostPlatform = "aarch64-darwin";
+  nixpkgs.hostPlatform = system;
   nix.extraOptions = ''
     extra-platforms = x86_64-darwin aarch64-darwin
   '';
@@ -40,5 +40,13 @@
 
   services.sketchybar = {
     enable = true;
+  };
+  # borders active_color=0x9c6942f5 inactive_color=0xff494d64 width=5.0 &
+  services.jankyborders = {
+    enable = true;
+    active_color = "0x9c6942f5";
+    inactive_color = "0xff494d64";
+    width = 5.0;
+    hidpi = true;
   };
 }

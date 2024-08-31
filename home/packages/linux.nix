@@ -23,6 +23,7 @@
     mpv # video player
     ncdu # disk space
     steam
+    telegram-desktop
 
     cm_unicode
   ]);
