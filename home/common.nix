@@ -5,24 +5,12 @@
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;
 
-
-  imports = [
-    ./packages/common.nix
-    ./zathura
-    ./starship
-    ./fish
-    ./zsh
-    ./clangd-format
-  ];
-
+  imports =
+    [ ./packages/common.nix ./zathura ./starship ./fish ./zsh ./clangd-format ];
 
   fonts.fontconfig.enable = true;
 
-
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
-
+  home.sessionVariables = { EDITOR = "nvim"; };
 
   programs.git = {
     enable = true;

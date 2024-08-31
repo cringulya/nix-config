@@ -29,8 +29,7 @@
     let
       username = "artemson";
       inherit (self) outputs;
-    in
-    {
+    in {
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs username; };
         modules = [ ./core/linux/configuration.nix ];
@@ -39,17 +38,20 @@
       # Build darwin flake using:
       # $ darwin-rebuild build --flake .
       darwinConfigurations."abobus-mb" = nix-darwin.lib.darwinSystem {
-        specialArgs = { inherit inputs outputs; system = "aarch64-darwin"; };
+        specialArgs = {
+          inherit inputs outputs;
+          system = "aarch64-darwin";
+        };
         modules = [
           ./core/darwin/configuration.nix
           home-manager.darwinModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.artemson = import ./home/darwin-home.nix;
-
-            # Optionally, use home-manager.extraSpecialArgs to pass
-            # arguments to home.nix
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.artemson = import ./home/darwin-home.nix;
+              extraSpecialArgs = { inherit inputs; };
+            };
           }
         ];
       };

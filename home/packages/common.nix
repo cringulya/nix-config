@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
-  home.packages = (with pkgs; [
+  home.packages = with pkgs; [
     unzip
     fzf
     fd
@@ -9,13 +9,13 @@
     ripgrep
     starship
     wget
+    zoxide
 
     gcc
     cargo
     gnumake
     lua
     lldb
-    julia-bin
     nodejs
     nodePackages.npm
     clang-tools
@@ -36,19 +36,10 @@
       python-pkgs.xgboost
     ]))
 
-    #nvim
-    stylua
-    nil
-    nixpkgs-fmt
-    lua-language-server
-    texlab
-    pyright
-    black
-    tree-sitter
-
     spotify
     yazi
 
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
-  ]);
+  ];
+
 }

@@ -7,6 +7,6 @@
   home.homeDirectory = "/Users/artemson";
 
   programs.zsh.shellAliases = {
-    rebuild = "darwin-rebuild switch --flake ~/nix";
+    rebuild = "darwin-rebuild switch --flake " + ./..;
   };
 }
