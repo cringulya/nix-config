@@ -1,12 +1,9 @@
 { pkgs, ... }:
 
 {
-  qt = {
-    enable = true;
-    platformTheme.name = "gnome";
-    style.name = "adwaita-dark";
-    style.package = pkgs.adwaita-qt;
-  };
+  catppuccin.flavor = "mocha";
+  catppuccin.accent = "lavender";
+  qt.style.catppuccin.enable = true;
 
   fonts.fontconfig.enable = true;
 

@@ -13,6 +13,7 @@
     ./mako
     ./scripts
     ./wlogout
+    ./xdg
   ];
 
   home.username = "artemson";

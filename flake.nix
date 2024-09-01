@@ -21,6 +21,8 @@
 
     zen-browser.url = "github:MarceColl/zen-browser-flake";
 
+    catppuccin.url = "github:catppuccin/nix";
+
     nixvim-flake = {
       url = "github:p0pusk/nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -41,7 +43,12 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.artemson = import ./home/linux-home.nix;
+              users.artemson = {
+                imports = [
+                  ./home/linux-home.nix
+                  inputs.catppuccin.homeManagerModules.catppuccin
+                ];
+              };
               extraSpecialArgs = { inherit inputs outputs username; };
 
             };
@@ -49,8 +56,6 @@
         ];
       };
 
-      # Build darwin flake using:
-      # $ darwin-rebuild build --flake .
       darwinConfigurations."abobus-mb" = nix-darwin.lib.darwinSystem {
         specialArgs = {
           inherit inputs outputs;
@@ -69,18 +74,5 @@
           }
         ];
       };
-
-      # Expose the package set, including overlays, for convenience.
-      # darwinPackages = self.darwinConfigurations."abobus-mb".pkgs;
-
-      # homeConfigurations = {
-      #   "artemson@abobus" = home-manager.lib.homeManagerConfiguration {
-      #     inherit pkgs;
-      #     extraSpecialArgs = { inherit inputs outputs; };
-      #     modules = [
-      #       ./home/linux-home.nix
-      #     ];
-      #   };
-      # };
     };
 }

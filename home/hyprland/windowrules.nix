@@ -23,6 +23,7 @@
       "opacity 0.90 0.90,class:^(firefox)$"
       "opacity 0.80 0.80,class:^(org.telegram.desktop)$"
       "opacity 0.80 0.80,class:^(brave-browser)$"
+      "opacity 0.80 0.80,class:^(zen-alpha)$"
       "opacity 0.80 0.80,class:^(Steam)$"
       "opacity 0.80 0.80,class:^(steam)$"
       "opacity 0.80 0.80,class:^(org.pwmt.zathura)$"
@@ -50,7 +51,7 @@
       "opacity 0.80 0.80,class:^(Signal)$ #Signal-Gtk"
       "opacity 0.80 0.80,class:^(io.gitlab.theevilskeleton.Upscaler)$ #Upscaler-Gtk"
 
-      "opacity 0.80 0.70,class:^(pavucontrol)$"
+      "opacity 0.80 0.70,class:^(org.pulseaudio.pavucontrol)$"
       "opacity 0.80 0.70,class:^(blueman-manager)$"
       "opacity 0.80 0.70,class:^(nm-applet)$"
       "opacity 0.80 0.70,class:^(nm-connection-editor)$"
@@ -66,7 +67,7 @@
       "float,class:^(yad)$ #Protontricks-Gtk"
       "float,class:^(eog)$ #Imageviewer-Gtk"
       "float,class:^(io.gitlab.theevilskeleton.Upscaler)$ #Upscaler-Gtk"
-      "float,class:^(pavucontrol)$"
+      "float,class:^(org.pulseaudio.pavucontrol)$"
       "float,class:^(blueman-manager)$"
       "float,class:^(nm-applet)$"
       "float,class:^(nm-connection-editor)$"
@@ -84,8 +85,10 @@
       "monitor 1,class:^(WebCord)$ #WebCord-Electron"
       "workspace 5, class:^(Spotify Premium)$"
 
-      "workspace 5,class:^(org.telegram.desktop)$"
+      "monitor 1,class:^(vesktop)$"
+      "workspace 6,class:^(vesktop)$"
       "monitor 1,class:^(org.telegram.desktop)$"
+      "workspace 6,class:^(org.telegram.desktop)$"
       # windowrulev2 = float, class:^(org.telegram.desktop)$
       "size 30% 80%,class:^(org.telegram.desktop)$"
       "move 10% 10%,class:^(org.telegram.desktop)$"
