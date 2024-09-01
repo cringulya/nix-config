@@ -13,11 +13,13 @@
     ./mako
     ./scripts
     ./wlogout
-    ./xdg
+    ./mimeapps
   ];
 
-  home.username = "artemson";
-  home.homeDirectory = "/home/artemson";
+  home = {
+    username = "artemson";
+    homeDirectory = "/home/artemson";
+  };
 
   home.file.".wallpapers".source = ../wallpapers;
 
@@ -26,7 +28,9 @@
       "${inputs.zen-browser.packages.${pkgs.system}.default}/bin/zen";
   };
 
-  programs = { firefox.enable = true; };
+  programs.zsh.shellAliases = {
+    rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nix";
+  };
 
   systemd.user.startServices = "sd-switch";
 }

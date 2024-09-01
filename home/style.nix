@@ -3,6 +3,10 @@
 {
   catppuccin.flavor = "mocha";
   catppuccin.accent = "lavender";
+  gtk.catppuccin = {
+    enable = true;
+    size = "compact";
+  };
   qt.style.catppuccin.enable = true;
 
   fonts.fontconfig.enable = true;
@@ -15,6 +19,8 @@
 
   gtk = {
     enable = true;
+    gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
+
     font = {
       name = "JetBrainsMono Nerd Font";
       size = 11;
@@ -24,15 +30,6 @@
       package = pkgs.catppuccin-papirus-folders.override {
         flavor = "mocha";
         accent = "lavender";
-      };
-    };
-    theme = {
-      name = "Catppuccin-Mocha-Compact-Lavender-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "lavender" ];
-        size = "compact";
-        # tweaks = [ "rimless" ];
-        variant = "mocha";
       };
     };
     cursorTheme = {

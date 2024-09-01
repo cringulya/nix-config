@@ -3,7 +3,7 @@
     general = {
       gaps_in = 5;
       gaps_out = 5;
-      border_size = 1;
+      border_size = 2;
       "col.active_border" = "rgba(bb9af7ff) rgba(b4f9f8ff) 45deg";
       "col.inactive_border" = "rgba(565f89cc) rgba(9aa5cecc) 45deg";
 
@@ -12,12 +12,16 @@
     };
 
     decoration = {
+      active_opacity = 0.8;
+      inactive_opacity = 0.8;
+      dim_inactive = true;
+      dim_strength = 0.2;
       rounding = 16;
       blur = {
         enabled = true;
         brightness = 1.0;
         contrast = 1.0;
-        noise = 0.02;
+        noise = 2.0e-2;
 
         passes = 3;
         size = 10;
@@ -30,7 +34,6 @@
       shadow_render_power = 3;
       "col.shadow" = "rgba(00000055)";
     };
-
 
     blurls = "waybar";
   };
