@@ -10,7 +10,7 @@
       "waybar"
       "swww init"
       "sleep 1"
-      "swww img ~/.wallpapers/nix-colored.png"
+      "swww img ~/.wallpapers/military.jpeg"
     ];
   };
 }

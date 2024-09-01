@@ -1,9 +1,9 @@
 {
   wayland.windowManager.hyprland.settings = {
     workspace = [
-      "1, monitor:DP-3, default:true"
-      "2, monitor:DP-3, default:false"
-      "3, monitor:DP-3, default:false"
+      "1, monitor:DP-5, default:true"
+      "2, monitor:DP-5, default:false"
+      "3, monitor:DP-5, default:false"
       "4, monitor:DP-7, default:true"
       "5, monitor:DP-7, default:false"
     ];

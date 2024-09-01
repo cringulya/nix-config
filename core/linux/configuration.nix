@@ -5,19 +5,18 @@
 { config, pkgs, inputs, lib, username, ... }:
 
 {
-  imports =
-    [
-      # Include the results of the hardware scan.
-      ../../hardware-configuration.nix
-      ./boot.nix
-      ./packages.nix
-      ./wayland.nix
-      ./nvidia.nix
-      ./audio.nix
-      ./xserver.nix
-      ./user.nix
-      inputs.lanzaboote.nixosModules.lanzaboote
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ../../hardware-configuration.nix
+    ./boot.nix
+    ./packages.nix
+    ./wayland.nix
+    ./nvidia.nix
+    ./audio.nix
+    ./xserver.nix
+    ./user.nix
+    inputs.lanzaboote.nixosModules.lanzaboote
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -30,7 +29,8 @@
 
   # This will add each flake input as a registry
   # To make nix3 commands consistent with your flake
-  nix.registry = (lib.mapAttrs (_: flake: { inherit flake; })) ((lib.filterAttrs (_: lib.isType "flake")) inputs);
+  nix.registry = (lib.mapAttrs (_: flake: { inherit flake; }))
+    ((lib.filterAttrs (_: lib.isType "flake")) inputs);
 
   nix = {
     settings = {
@@ -69,7 +69,6 @@
     LC_TIME = "ru_RU.UTF-8";
   };
 
-
   zramSwap = {
     enable = true;
     algorithm = "lz4";
@@ -78,9 +77,9 @@
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
 
-
   programs = {
     fish.enable = true;
+    zsh.enable = true;
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
@@ -91,7 +90,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

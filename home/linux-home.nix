@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -21,12 +21,11 @@
   home.file.".wallpapers".source = ../wallpapers;
 
   home.sessionVariables = {
-    DEFAULT_BROWSER = "${pkgs.firefox}/bin/firefox";
+    DEFAULT_BROWSER =
+      "${inputs.zen-browser.packages.${pkgs.system}.default}/bin/zen";
   };
 
-  programs = {
-    firefox.enable = true;
-  };
+  programs = { firefox.enable = true; };
 
   systemd.user.startServices = "sd-switch";
 }
