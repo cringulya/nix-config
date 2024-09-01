@@ -26,10 +26,6 @@
       preserve_split = "yes";
     };
 
-    master = {
-      new_is_master = false;
-    };
-
     misc = {
       vrr = 0;
       focus_on_activate = true;

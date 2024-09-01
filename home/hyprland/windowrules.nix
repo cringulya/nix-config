@@ -75,13 +75,14 @@
       "animation popin,class:^(kitty)$,title:^(update-sys)$"
 
       "workspace 2, class:^(firefox)$"
-      "nodim,class:^(firefox)$"
+      "workspace 2, class:^(zen-alpha)$"
       "workspace 2, class:^(brave-browser)$"
       "nodim,class:^(firefox)$"
+      "nodim,class:^(zen-alpha)$"
       "nodim,class:^(WebCord)$ #WebCord-Electron"
+
       "monitor 1,class:^(WebCord)$ #WebCord-Electron"
       "workspace 5, class:^(Spotify Premium)$"
-
 
       "workspace 5,class:^(org.telegram.desktop)$"
       "monitor 1,class:^(org.telegram.desktop)$"

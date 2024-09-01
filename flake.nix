@@ -19,6 +19,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
+
     nixvim-flake = {
       url = "github:p0pusk/nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +34,19 @@
     in {
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs username; };
-        modules = [ ./core/linux/configuration.nix ];
+        modules = [
+          ./core/linux/configuration.nix
+          inputs.home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.artemson = import ./home/linux-home.nix;
+              extraSpecialArgs = { inherit inputs outputs username; };
+
+            };
+          }
+        ];
       };
 
       # Build darwin flake using:

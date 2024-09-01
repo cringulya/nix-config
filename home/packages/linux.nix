@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   home.packages = (with pkgs; [
@@ -9,22 +9,18 @@
     grimblast
     slurp
 
-    zlib
-
+    inputs.zen-browser.packages."${system}".default
     obs-studio
     libreoffice-fresh
     openrgb-with-all-plugins
     firefox
     brave
     vesktop
-    teams-for-linux
     imv # image viewer
     libnotify
     mpv # video player
     ncdu # disk space
     steam
     telegram-desktop
-
-    cm_unicode
   ]);
 }

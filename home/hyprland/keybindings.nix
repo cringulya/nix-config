@@ -5,7 +5,7 @@
     "$mainMod" = "SUPER";
     "$term" = "kitty";
     "$file" = "kitty -- yazi";
-    "$browser" = "brave";
+    "$browser" = "zen";
 
     bind = [
       "ALT, space, exec, pkill wofi || wofi --show drun"
@@ -22,7 +22,6 @@
       "$mainMod SHIFT, E, exec, $file" # open file manager
       "$mainMod, E, exec, $browser" # open browser
       "CTRL SHIFT, ESCAPE, exec, kitty -- btop"
-
 
       "$mainMod, q, killactive,"
 
@@ -54,7 +53,6 @@
 
       # move to the first empty workspace instantly with mainMod + CTRL + [↓]
       "$mainMod CTRL, down, workspace, empty"
-
 
       # Move active window to a workspace with mainMod + SHIFT + [0-9]
       "$mainMod SHIFT, 1, movetoworkspace, 1"
@@ -99,7 +97,6 @@
       ", XF86AudioPause, exec, ${pkgs.playerctl}/bin/playerctl play-pause"
       ", XF86AudioNext, exec, ${pkgs.playerctl}/bin/playerctl next"
       ", XF86AudioPrev, exec, ${pkgs.playerctl}/bin/playerctl previous"
-
 
       # Special workspaces (scratchpad)
       "$mainMod, m, movetoworkspacesilent, special"

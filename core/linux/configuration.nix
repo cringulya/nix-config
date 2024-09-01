@@ -8,7 +8,7 @@
   imports =
     [
       # Include the results of the hardware scan.
-      ../hardware-configuration.nix
+      ../../hardware-configuration.nix
       ./boot.nix
       ./packages.nix
       ./wayland.nix
@@ -17,7 +17,6 @@
       ./xserver.nix
       ./user.nix
       inputs.lanzaboote.nixosModules.lanzaboote
-      inputs.home-manager.nixosModules.home-manager
     ];
 
   # Bootloader.

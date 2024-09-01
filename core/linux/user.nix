@@ -5,7 +5,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     extraSpecialArgs = { inherit inputs; };
-    users.artemson = import ../home/linux-home.nix;
+    users.artemson = import ../../home/linux-home.nix;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -13,7 +13,7 @@
     isNormalUser = true;
     description = "Artem Son";
     extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
   };
 
   nix.settings.allowed-users = [ "artemson" ];
