@@ -16,8 +16,8 @@
       allow_images = true;
       image_size = 40;
       gtk_dark = true;
-      key_up = "Control_L-p";
-      key_down = "Control_L-n";
+      key_up = "Ctrl-p";
+      key_down = "Ctrl-n";
     };
     style = builtins.readFile (./style.css);
   };
