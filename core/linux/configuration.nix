@@ -18,10 +18,6 @@
     inputs.lanzaboote.nixosModules.lanzaboote
   ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
   networking.hostName = "abobus"; # Define your hostname.
 
   hardware.bluetooth.enable = true;

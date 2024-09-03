@@ -54,9 +54,8 @@
       "workspace 2, class:^(brave-browser)$"
       "nodim,class:^(firefox)$"
 
-      "workspace 5, class:^(Spotify Premium)$"
-
       "workspace 4,class:^(vesktop)$"
+      "workspace 5, title:^(Spotify Premium)$"
 
       "workspace 5, initialTitle:^(Telegram)$"
       "float, initialTitle:^(Telegram)$"

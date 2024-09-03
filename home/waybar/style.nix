@@ -11,8 +11,7 @@ let
     background = "#11111B";
     opacity = "0.98";
   };
-in
-{
+in {
   programs.waybar.style = ''
 
     * {

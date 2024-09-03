@@ -7,14 +7,8 @@
     margin-bottom = 0;
     margin-left = 0;
     margin-right = 0;
-    modules-left = [
-      "custom/launcher"
-      "hyprland/workspaces"
-      "wlr/taskbar"
-    ];
-    modules-center = [
-      "clock"
-    ];
+    modules-left = [ "custom/launcher" "hyprland/workspaces" "wlr/taskbar" ];
+    modules-center = [ "clock" ];
     modules-right = [
       "tray"
       "cpu"
@@ -27,8 +21,10 @@
     clock = {
       format = "  {:%H:%M}";
       tooltip = "true";
-      tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-      format-alt = "  {:%d/%m}";
+      tooltip-format = ''
+        <big>{:%Y %B}</big>
+        <tt><small>{calendar}</small></tt>'';
+      format-alt = "  {:%d.%m}";
     };
     "hyprland/workspaces" = {
       active-only = false;
@@ -41,9 +37,7 @@
         default = "";
         sort-by-number = true;
       };
-      persistent-workspaces = {
-        "1" = [ ];
-      };
+      persistent-workspaces = { "1" = [ ]; };
     };
     "wlr/taskbar" = {
       format = "{icon}";
@@ -84,9 +78,7 @@
     pulseaudio = {
       format = "{icon} {volume}%";
       format-muted = "󰖁 ";
-      format-icons = {
-        default = [ " " ];
-      };
+      format-icons = { default = [ " " ]; };
       scroll-step = 5;
       on-click = "pavucontrol -t 3";
     };

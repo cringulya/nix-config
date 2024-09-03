@@ -17,5 +17,4 @@
     enable = true;
     pkiBundle = "/etc/secureboot";
   };
-
 }
