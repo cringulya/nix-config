@@ -14,7 +14,6 @@
     libreoffice-fresh
     openrgb-with-all-plugins
     firefox
-    brave
     vesktop
     imv # image viewer
     libnotify
