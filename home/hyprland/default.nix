@@ -1,3 +1,5 @@
+{ pkgs, inputs, ... }:
+
 {
   imports = [
     ./startup.nix
@@ -9,9 +11,15 @@
     ./theme.nix
   ];
 
-  systemd.user.targets.hyprland-session.Unit.Wants = [ "xdg-desktop-autostart.target" ];
+  systemd.user.targets.hyprland-session.Unit.Wants =
+    [ "xdg-desktop-autostart.target" ];
+
   wayland.windowManager.hyprland = {
     enable = true;
+    # package =
+    #   inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    # extraPortals =
+    #   [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
     xwayland = {
       enable = true;
       # hidpi = true;

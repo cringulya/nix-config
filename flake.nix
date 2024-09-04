@@ -23,6 +23,8 @@
 
     catppuccin.url = "github:catppuccin/nix";
 
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
     nixvim-flake = {
       url = "github:p0pusk/nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -45,8 +47,8 @@
               useUserPackages = true;
               users.artemson = {
                 imports = [
-                  ./home/linux-home.nix
                   inputs.catppuccin.homeManagerModules.catppuccin
+                  ./home/linux-home.nix
                 ];
               };
               extraSpecialArgs = { inherit inputs outputs username; };

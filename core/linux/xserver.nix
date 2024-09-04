@@ -1,22 +1,26 @@
 { pkgs, username, ... }:
 
 {
-  services.xserver = {
-    enable = true;
-    xkb.layout = "us";
-  };
+  services = {
+    xserver = {
+      enable = true;
+      xkb.layout = "us";
+    };
 
-  services.libinput = { enable = true; };
+    libinput = { enable = true; };
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    theme = "${import ./sddm-theme.nix { inherit pkgs; }}";
-  };
+    displayManager = {
+      sddm = {
+        enable = true;
+        wayland.enable = true;
+        theme = "${import ./sddm-theme.nix { inherit pkgs; }}";
+      };
 
-  services.displayManager.autoLogin = {
-    enable = true;
-    user = "${username}";
+      autoLogin = {
+        enable = true;
+        user = "${username}";
+      };
+    };
   };
 
   # To prevent getting stuck at shutdown

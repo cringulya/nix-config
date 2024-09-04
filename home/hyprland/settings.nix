@@ -25,7 +25,7 @@
 
     misc = {
       vrr = 0;
-      focus_on_activate = false;
+      focus_on_activate = true;
     };
   };
 }

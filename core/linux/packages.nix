@@ -7,14 +7,11 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    sbctl
     git
-    neovim
     btop
     killall
     pavucontrol
     pamixer
-    home-manager
     nix-prefetch-git
     wl-clipboard
     nix-index
