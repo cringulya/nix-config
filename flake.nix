@@ -48,6 +48,7 @@
               users.artemson = {
                 imports = [
                   inputs.catppuccin.homeManagerModules.catppuccin
+                  inputs.hyprland.homeManagerModules.default
                   ./home/linux-home.nix
                 ];
               };
