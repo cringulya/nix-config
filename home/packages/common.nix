@@ -10,6 +10,7 @@
     starship
     wget
     zoxide
+    tree
 
     gcc
     cargo

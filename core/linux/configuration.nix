@@ -70,8 +70,10 @@
     algorithm = "lz4";
   };
 
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = true;
+  system.autoUpgrade = {
+    enable = true;
+    allowReboot = true;
+  };
 
   programs = {
     fish.enable = true;
@@ -83,9 +85,6 @@
   };
 
   services.hardware.openrgb.enable = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
