@@ -21,7 +21,11 @@
     nodePackages.npm
     clang-tools
     cmake
-    texliveFull
+    neovide
+
+    latexrun
+    texlive.combined.scheme-full
+
     ffmpeg
     man-pages # extra man pages
 
