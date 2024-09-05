@@ -12,6 +12,8 @@
 
   home.sessionVariables = { EDITOR = "nvim"; };
 
+  home.file.".config/snippets".source = ./snippets;
+
   programs = {
     git = {
       enable = true;
