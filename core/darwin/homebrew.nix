@@ -8,14 +8,10 @@
       autoUpdate = true;
     };
 
-    taps = [
-    ];
+    taps = [ ];
 
-    brews = [
-    ];
+    brews = [ ];
 
-    casks = [
-      "telegram"
-    ];
+    casks = [ "telegram" ];
   };
 }
