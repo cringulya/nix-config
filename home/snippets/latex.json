@@ -1,19 +1,38 @@
 {
-  "template": {
-    "prefix": "temp",
+  "dm-homework": {
+    "prefix": "dmhw",
     "body": [
-      "\\documentclass{article}",
-      "% General document formatting",
-      "\\usepackage[margin=0.7in]{geometry}",
-      "\\usepackage[parfill]{parskip}",
+      "\\documentclass[12pt]{article}",
+      "\\usepackage[T2A]{fontenc}",
       "\\usepackage[utf8]{inputenc}",
-      "\\usepackage[russian]{babel}",
-
-      "% Related to math",
-      "\\usepackage{amsmath,amssymb,amsfonts,amsthm}",
-
+      "\\usepackage[english,russian]{babel}",
+      "\\usepackage{graphicx}",
+      "\\usepackage{amsmath}",
+      "\\usepackage{amsthm}",
+      "\\usepackage{caption}",
+      "\\usepackage{tikz}",
+      "\\usepackage{subcaption}",
+      "\\usepackage{imakeidx}",
+      "\\usepackage[russian]{cleveref}",
+      "\\usepackage[a4paper,left=15mm,right=15mm,top=30mm,bottom=20mm]{geometry}",
+      "",
+      "\\parindent=0mm",
+      "\\parskip=3mm",
+      "",
+      "\\makeindex",
+      "\\pagestyle{empty}",
+      "",
+      "\\title{ДЗ $1, Дискретная Математика}",
+      "\\author{Сон Артём}",
+      "\\date{\\today}",
+      "",
       "\\begin{document}",
-      "  $0",
+      "",
+      "\\maketitle",
+      "\\begin{enumerate}",
+      "\\item",
+      " $0",
+      "\\end{enumerate}",
       "\\end{document}"
     ]
   }

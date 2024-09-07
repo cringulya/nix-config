@@ -3,11 +3,18 @@
 {
   catppuccin.flavor = "mocha";
   catppuccin.accent = "lavender";
+
   gtk.catppuccin = {
     enable = true;
     size = "compact";
   };
-  qt.style.catppuccin.enable = true;
+
+  qt = {
+    enable = true;
+    style.name = "kvantum";
+    platformTheme.name = "kvantum";
+    style.catppuccin.enable = true;
+  };
 
   fonts.fontconfig.enable = true;
 
