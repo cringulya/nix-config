@@ -12,6 +12,7 @@
     zoxide
     tree
 
+
     gcc
     cargo
     gnumake
@@ -26,6 +27,7 @@
     latexrun
     texlive.combined.scheme-full
 
+    spoofdpi
     ffmpeg
     man-pages # extra man pages
 

@@ -6,6 +6,7 @@
       "3, monitor:DP-5, default:false"
       "4, monitor:DP-7, default:true"
       "5, monitor:DP-7, default:false"
+      "6, monitor:DP-7, default:false"
     ];
 
     windowrulev2 = [
@@ -57,10 +58,10 @@
       "workspace 4,class:^(vesktop)$"
       "workspace 5, title:^(Spotify Premium)$"
 
-      "workspace 5, initialTitle:^(Telegram)$"
-      "float, initialTitle:^(Telegram)$"
-      "size 30% 80%, initialTitle:^(Telegram)$"
-      "move 10% 10%, initialTitle:^(Telegram)$"
+      "workspace 6, class:^(org.telegram.desktop)$"
+      "float, class:^(org.telegram.desktop)$"
+      "size 30% 80%, class:^(org.telegram.desktop)$"
+      "move 10% 10%, class:^(org.telegram.desktop)$"
 
       "fullscreen,title:(Media viewer)"
     ];

@@ -37,7 +37,7 @@
         default = "";
         sort-by-number = true;
       };
-      persistent-workspaces = { "1" = [ ]; };
+      # persistent-workspaces = { "1" = [ ]; };
     };
     "wlr/taskbar" = {
       format = "{icon}";
