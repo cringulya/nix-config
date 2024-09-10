@@ -1,5 +1,3 @@
-{ ... }:
-
 {
   homebrew = {
     enable = true;
@@ -8,9 +6,14 @@
       autoUpdate = true;
     };
 
-    taps = [ ];
+    taps = [
+      "homebrew/services"
+    ];
 
-    brews = [ ];
+    brews = [{
+      name = "dbus";
+      start_service = true;
+    }];
 
     casks = [ "telegram" ];
   };

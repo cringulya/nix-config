@@ -72,7 +72,12 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.artemson = import ./home/darwin-home.nix;
+              users.artemson = {
+                imports = [
+                  inputs.catppuccin.homeManagerModules.catppuccin
+                  ./home/darwin-home.nix
+                ];
+              };
               extraSpecialArgs = { inherit inputs; };
             };
           }
