@@ -14,6 +14,7 @@
     application/xhtml+xml=${browser}
     application/x-extension-xhtml=${browser}
     application/x-extension-xht=${browser}
+    application/pdf=zathura.desktop
 
 
     [Added Associations]
@@ -27,5 +28,6 @@
     application/xhtml+xml=${browser}
     application/x-extension-xhtml=${browser}
     application/x-extension-xht=${browser}
+    application/pdf=zathura.desktop
   '';
 }
