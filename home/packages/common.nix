@@ -11,7 +11,7 @@
     wget
     zoxide
     tree
-
+    nix-prefetch-git
 
     gcc
     cargo

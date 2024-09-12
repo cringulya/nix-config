@@ -6,9 +6,7 @@
       autoUpdate = true;
     };
 
-    taps = [
-      "homebrew/services"
-    ];
+    taps = [ "homebrew/services" ];
 
     brews = [{
       name = "dbus";
