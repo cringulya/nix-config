@@ -7,9 +7,7 @@
       "ctrl+c" = "copy_and_clear_or_interrupt";
       "ctrl+v" = "paste_from_clipboard";
     };
-    settings = {
-      font_size = 18;
-    };
+    settings = { font_size = 18; };
     theme = "Catppuccin-Mocha";
 
     font = {

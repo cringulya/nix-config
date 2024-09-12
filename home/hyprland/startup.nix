@@ -11,7 +11,6 @@
       "swww init"
       "sleep 1"
       "swww img ~/.wallpapers/military.jpeg"
-      "spoofdpi &"
     ];
   };
 }
