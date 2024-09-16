@@ -1,6 +1,1 @@
-{ ... }:
-
-{
-  home.file = {
-  };
-}
+{ home.file.".clang-format".source = ./.clang-format; }
