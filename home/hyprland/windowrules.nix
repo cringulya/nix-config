@@ -59,9 +59,6 @@
       "workspace 5, title:^(Spotify Premium)$"
 
       "workspace 6, class:^(org.telegram.desktop)$"
-      "float, class:^(org.telegram.desktop)$"
-      "size 30% 80%, class:^(org.telegram.desktop)$"
-      "move 10% 10%, class:^(org.telegram.desktop)$"
 
       "fullscreen,title:(Media viewer)"
     ];
