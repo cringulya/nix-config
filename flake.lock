@@ -708,11 +708,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1726527682,
-        "narHash": "sha256-6XpzwDvtPCFRG1rYF62648eXidD+59kvTOIwv2zuNtg=",
+        "lastModified": 1726530246,
+        "narHash": "sha256-KANkmS4sZcUlukHFq92cxfS1dhSJaNnFbRom06MSzwQ=",
         "owner": "cringulya",
         "repo": "nixvim-config",
-        "rev": "4d141f89b7822fa033d2b958b977d67845f850cc",
+        "rev": "eeed262a187d0ebb7d62baf1939e250112435f0a",
         "type": "github"
       },
       "original": {
