@@ -13,6 +13,7 @@
     ./zsh
     ./clangd-format
     ./tmux
+    ./kitty
   ];
 
   fonts.fontconfig.enable = true;

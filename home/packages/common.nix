@@ -25,6 +25,7 @@
     neovide
 
     latexrun
+    pplatex
     texlive.combined.scheme-full
 
     spoofdpi

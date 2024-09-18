@@ -6,8 +6,9 @@
   environment.systemPackages = with pkgs; [
     git
     neovim
-    # raycast
     iterm2
+    kitty
     # arc-browser
+    # raycast
   ];
 }

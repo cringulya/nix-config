@@ -5,7 +5,7 @@
     enable = true;
     skhdConfig = ''
       # open terminal
-      alt - return : /Applications/Nix\ Apps/iTerm2.app/Contents/MacOS/iTerm2
+      alt - return : kitty
       alt - e : open -a /Applications/Arc.app/Contents/MacOS/Arc
 
       alt + shift - r : yabai --restart-service && sketchybar --reload

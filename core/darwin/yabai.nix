@@ -59,7 +59,7 @@
       # focus window after active display changes
       yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[-1].id)"
 
-      yabai -m rule --add app="^Arc$" opacity=0.98 space=^2
+      yabai -m rule --add app="^Arc$" opacity=0.98 space=^1
       yabai -m rule --add app="^Spotify$" space=^5
     '';
   };
