@@ -11,7 +11,6 @@
     wget
     zoxide
     tree
-    syncthing
     nix-prefetch-git
 
     gcc

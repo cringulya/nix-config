@@ -1,0 +1,1 @@
+{ programs.syncthing = { enable = true; }; }

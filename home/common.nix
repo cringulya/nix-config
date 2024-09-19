@@ -9,6 +9,7 @@
     ./packages/common.nix
     ./zathura
     ./starship
+    ./syncthing
     ./fish
     ./zsh
     ./clangd-format
