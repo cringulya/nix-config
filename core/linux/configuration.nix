@@ -51,18 +51,18 @@
   time.timeZone = "Europe/Moscow";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "C.UTF-8";
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "ru_RU.UTF-8";
-    LC_IDENTIFICATION = "ru_RU.UTF-8";
+    LC_IDENTIFICATION = "C.UTF-8";
     LC_MEASUREMENT = "ru_RU.UTF-8";
-    LC_MONETARY = "ru_RU.UTF-8";
-    LC_NAME = "ru_RU.UTF-8";
-    LC_NUMERIC = "ru_RU.UTF-8";
-    LC_PAPER = "ru_RU.UTF-8";
-    LC_TELEPHONE = "ru_RU.UTF-8";
-    LC_TIME = "ru_RU.UTF-8";
+    LC_MONETARY = "C.UTF-8";
+    LC_NAME = "C.UTF-8";
+    LC_NUMERIC = "C.UTF-8";
+    LC_PAPER = "C.UTF-8";
+    LC_TELEPHONE = "C.UTF-8";
+    LC_TIME = "en_GB.UTF-8";
   };
 
   zramSwap = {
