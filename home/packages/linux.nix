@@ -8,6 +8,8 @@
     swww
     grimblast
     slurp
+    gdb
+    gf
 
     inputs.zen-browser.packages."${system}".default
     obs-studio
