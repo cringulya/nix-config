@@ -15,6 +15,7 @@
     ./clangd-format
     ./tmux
     ./kitty
+    ./latexindent
   ];
 
   fonts.fontconfig.enable = true;
