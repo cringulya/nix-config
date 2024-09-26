@@ -8,11 +8,14 @@
 
     taps = [ "homebrew/services" ];
 
-    brews = [{
-      name = "dbus";
-      start_service = true;
-    }];
+    brews = [
+      {
+        name = "dbus";
+        start_service = true;
+      }
+      "postgresql@16"
+    ];
 
-    casks = [ "telegram" ];
+    casks = [ "telegram" "pgadmin4" ];
   };
 }

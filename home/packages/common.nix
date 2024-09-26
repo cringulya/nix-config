@@ -23,6 +23,7 @@
     clang-tools
     cmake
     neovide
+    pgadmin4
 
     latexrun
     pplatex
