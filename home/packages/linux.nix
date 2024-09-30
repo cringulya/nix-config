@@ -17,6 +17,7 @@
     openrgb-with-all-plugins
     firefox
     vesktop
+    webcord
     imv # image viewer
     libnotify
     mpv # video player
