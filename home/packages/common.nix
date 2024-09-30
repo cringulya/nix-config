@@ -33,17 +33,20 @@
     ffmpeg
     man-pages # extra man pages
 
-    (pkgs.python3.withPackages (python-pkgs: [
-      python-pkgs.pip
-      python-pkgs.virtualenv
-      python-pkgs.pandas
-      python-pkgs.numpy
-      python-pkgs.scikit-learn
-      python-pkgs.torch
-      python-pkgs.torchaudio
-      python-pkgs.librosa
-      python-pkgs.xgboost
-    ]))
+    (python3.withPackages (python-pkgs:
+      with python-pkgs; [
+        pip
+        jupyterlab
+        matplotlib
+        virtualenv
+        pandas
+        numpy
+        scikit-learn
+        torch
+        torchaudio
+        librosa
+        xgboost
+      ]))
 
     spotify
     yazi
