@@ -11,6 +11,9 @@
     gdb
     gf
 
+    mangohud
+    protonup
+
     inputs.zen-browser.packages."${system}".default
     obs-studio
     libreoffice-fresh

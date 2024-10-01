@@ -10,6 +10,7 @@
     ../../hardware-configuration.nix
     ./boot.nix
     ./packages.nix
+    ./gaming.nix
     ./wayland.nix
     ./nvidia.nix
     ./audio.nix
