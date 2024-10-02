@@ -13,6 +13,7 @@
     tree
     nix-prefetch-git
 
+    ghc
     gcc
     cargo
     gnumake
