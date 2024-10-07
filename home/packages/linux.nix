@@ -27,5 +27,6 @@
     ncdu # disk space
     steam
     telegram-desktop
+    vscode
   ]);
 }

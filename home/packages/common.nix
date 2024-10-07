@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    zip
     unzip
     fzf
     fd
@@ -13,7 +14,10 @@
     tree
     nix-prefetch-git
 
-    ghc
+    hlint
+    haskellPackages.stack
+    haskell.compiler.ghc947
+    haskell.packages.ghc947.haskell-language-server
     gcc
     cargo
     gnumake
@@ -37,6 +41,7 @@
     (python3.withPackages (python-pkgs:
       with python-pkgs; [
         pip
+        opencv4
         jupyterlab
         matplotlib
         virtualenv
