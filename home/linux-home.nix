@@ -4,7 +4,6 @@
   imports = [
     ./common.nix
     ./packages/linux.nix
-    ./style.nix
     ./hyprland
     ./kitty
     ./waybar

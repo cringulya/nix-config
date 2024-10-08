@@ -11,6 +11,7 @@
     ./boot.nix
     ./packages.nix
     ./gaming.nix
+    ./stylix.nix
     ./wayland.nix
     ./nvidia.nix
     ./audio.nix

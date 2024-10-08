@@ -1,4 +1,5 @@
 {
+  stylix.targets.hyprland.enable = false;
   wayland.windowManager.hyprland.settings = {
     general = {
       gaps_in = 2;

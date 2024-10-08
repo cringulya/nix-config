@@ -1,7 +1,6 @@
 {
   programs.zathura = {
     enable = true;
-    catppuccin.enable = true;
     extraConfig = ''
       set selection-clipboard clipboard
 

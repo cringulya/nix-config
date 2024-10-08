@@ -21,7 +21,7 @@
 
     zen-browser.url = "github:MarceColl/zen-browser-flake";
 
-    catppuccin.url = "github:catppuccin/nix";
+    stylix.url = "github:danth/stylix";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
@@ -39,6 +39,7 @@
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs username; };
         modules = [
+          inputs.stylix.nixosModules.stylix
           ./core/linux/configuration.nix
           inputs.home-manager.nixosModules.home-manager
           {
@@ -48,7 +49,6 @@
               useUserPackages = true;
               users.artemson = {
                 imports = [
-                  inputs.catppuccin.homeManagerModules.catppuccin
                   inputs.hyprland.homeManagerModules.default
                   ./home/linux-home.nix
                 ];

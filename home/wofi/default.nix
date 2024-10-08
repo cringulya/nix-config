@@ -1,10 +1,7 @@
 {
-  imports = [
-    ./config.nix
-  ];
+  imports = [ ./config.nix ];
 
+  stylix.targets.wofi.enable = false;
 
-  programs.wofi = {
-    enable = true;
-  };
+  programs.wofi = { enable = true; };
 }
