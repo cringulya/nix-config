@@ -30,8 +30,14 @@
     extra-platforms = x86_64-darwin aarch64-darwin
   '';
 
-  imports =
-    [ ./preferences.nix ./packages.nix ./homebrew.nix ./yabai.nix ./skhd.nix ];
+  imports = [
+    ./preferences.nix
+    ./packages.nix
+    ./homebrew.nix
+    ./yabai.nix
+    ./skhd.nix
+    ./stylix.nix
+  ];
 
   services.sketchybar = { enable = true; };
   # borders active_color=0x9c6942f5 inactive_color=0xff494d64 width=5.0 &

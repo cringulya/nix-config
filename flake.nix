@@ -66,18 +66,14 @@
           system = "aarch64-darwin";
         };
         modules = [
+          inputs.stylix.darwinModules.stylix
           ./core/darwin/configuration.nix
           home-manager.darwinModules.home-manager
           {
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.artemson = {
-                imports = [
-                  inputs.catppuccin.homeManagerModules.catppuccin
-                  ./home/darwin-home.nix
-                ];
-              };
+              users.artemson = { imports = [ ./home/darwin-home.nix ]; };
               extraSpecialArgs = { inherit inputs; };
             };
           }

@@ -12,6 +12,10 @@
       export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
     '';
 
-    shellAliases = { rebuild = "darwin-rebuild switch --flake ~/.config/nix"; };
+    shellAliases = {
+      rebuild = ''
+        nix flake lock --flake ~/.config/nix --update-input nixvim-flake &&
+        darwin-rebuild switch --flake ~/.config/nix'';
+    };
   };
 }
