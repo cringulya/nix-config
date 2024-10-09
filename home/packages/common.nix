@@ -55,6 +55,7 @@
       ]))
 
     spotify
+    revolt-desktop
     yazi
 
     inputs.nixvim-flake.packages.${pkgs.system}.default

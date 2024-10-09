@@ -30,7 +30,9 @@
   };
 
   programs.zsh.shellAliases = {
-    rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nix";
+    rebuild = ''
+      sudo nix flake lock --flake ~/.config/nix --update-input nixvim-flake &&
+      nixos-rebuild switch --upgrade --flake ~/.config/nix'';
   };
 
   systemd.user.startServices = "sd-switch";
