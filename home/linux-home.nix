@@ -31,7 +31,7 @@
 
   programs.zsh.shellAliases = {
     rebuild = ''
-      sudo nix flake lock --flake ~/.config/nix --update-input nixvim-flake &&
+      sudo nix flake lock --update-input nixvim-flake ~/.config/nix &&
       nixos-rebuild switch --upgrade --flake ~/.config/nix'';
   };
 
