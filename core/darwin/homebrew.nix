@@ -13,7 +13,10 @@
         name = "dbus";
         start_service = true;
       }
-      "postgresql@16"
+      {
+        name = "postgresql";
+        start_service = true;
+      }
     ];
 
     casks = [ "telegram" "pgadmin4" ];

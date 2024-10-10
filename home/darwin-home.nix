@@ -14,7 +14,7 @@
 
     shellAliases = {
       rebuild = ''
-        nix flake lock --flake ~/.config/nix --update-input nixvim-flake &&
+        nix flake lock --update-input nixvim-flake ~/.config/nix &&
         darwin-rebuild switch --flake ~/.config/nix'';
     };
   };
