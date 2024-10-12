@@ -3,6 +3,7 @@
 {
   programs.tmux = {
     enable = true;
+    shell = "${pkgs.zsh}/bin/zsh";
     plugins = with pkgs; [
       {
         plugin = tmuxPlugins.catppuccin;
@@ -47,7 +48,7 @@
         '';
       }
 
-      { plugin = tmuxPlugins.vim-tmux-navigator; }
+      # { plugin = tmuxPlugins.vim-tmux-navigator; }
 
     ];
 
@@ -62,6 +63,10 @@
       bind -r K resize-pane -U 3
       bind -r L resize-pane -R 3
       bind -r H resize-pane -L 3
+      bind -r k select-pane -U
+      bind -r j select-pane -D
+      bind -r h select-pane -L
+      bind -r l select-pane -R
 
       unbind m
       bind -r m resize-pane -Z

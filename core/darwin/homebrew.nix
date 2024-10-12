@@ -14,7 +14,7 @@
         start_service = true;
       }
       {
-        name = "postgresql";
+        name = "postgresql@16";
         start_service = true;
       }
     ];
