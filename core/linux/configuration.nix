@@ -18,6 +18,7 @@
     ./audio.nix
     ./xserver.nix
     ./user.nix
+    ./zapret.nix
     inputs.lanzaboote.nixosModules.lanzaboote
   ];
 
@@ -85,6 +86,8 @@
   };
 
   services.hardware.openrgb.enable = true;
+
+  zapret.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

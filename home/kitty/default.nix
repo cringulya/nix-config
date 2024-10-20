@@ -13,6 +13,10 @@
       macos_quit_when_last_window_closed = true;
     };
 
+    extraConfig = ''
+      modify_font cell_height 110%
+    '';
+
     darwinLaunchOptions = [ "--single-instance" ];
   };
 }

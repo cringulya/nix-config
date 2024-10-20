@@ -28,7 +28,6 @@
     clang-tools
     cmake
     neovide
-    pgadmin4
 
     latexrun
     pplatex
@@ -48,10 +47,6 @@
         pandas
         numpy
         scikit-learn
-        torch
-        torchaudio
-        librosa
-        xgboost
       ]))
 
     spotify

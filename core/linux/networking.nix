@@ -1,7 +1,6 @@
 {
   networking = {
-    enableIPv6 = true;
+    enableIPv6 = false;
     networkmanager = { enable = true; };
   };
-
 }

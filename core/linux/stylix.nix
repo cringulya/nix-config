@@ -2,7 +2,7 @@
 
 {
   stylix.enable = true;
-  stylix.image = /home/artemson/.wallpapers/military.jpeg;
+  stylix.image = "${../../wallpapers/military.jpeg}";
   stylix.base16Scheme =
     "${pkgs.base16-schemes}/share/themes/rose-pine-moon.yaml";
 
