@@ -25,9 +25,8 @@
     lldb
     nodejs
     nodePackages.npm
-    clang-tools
+    libclang
     cmake
-    neovide
 
     latexrun
     pplatex

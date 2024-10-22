@@ -10,6 +10,7 @@
     ./zathura
     ./starship
     ./syncthing
+    ./neovide
     ./fish
     ./zsh
     ./clangd-format

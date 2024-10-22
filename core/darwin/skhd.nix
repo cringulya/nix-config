@@ -45,9 +45,6 @@
       lctrl + alt - l : yabai -m window --resize right:50:0; \
                         yabai -m window --resize left:50:0
 
-      # balance size of windows
-      shift + alt - 0 : yabai -m space --balance
-
       # fast focus desktop
       alt - 1 : yabai -m space --focus  1
       alt - 2 : yabai -m space --focus  2
