@@ -26,6 +26,7 @@
       name = "JetBrainsMono";
       package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
     };
+    sizes = { terminal = 18; };
   };
 
   stylix.polarity = "dark";

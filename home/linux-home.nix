@@ -8,6 +8,7 @@
     ./kitty
     ./waybar
     ./wofi
+    ./rofi
     ./btop
     ./mako
     ./scripts

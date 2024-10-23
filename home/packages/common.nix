@@ -25,8 +25,13 @@
     lldb
     nodejs
     nodePackages.npm
-    libclang
     cmake
+
+    neomutt
+    mutt-wizard
+    pass
+    isync
+    lynx
 
     latexrun
     pplatex

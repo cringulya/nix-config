@@ -15,6 +15,7 @@
     nix-prefetch-git
     wl-clipboard
     nix-index
+    clang
 
     #sddm-theme dependencies
     libsForQt5.qt5.qtquickcontrols2
