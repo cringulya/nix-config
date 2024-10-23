@@ -1,3 +1,4 @@
+{ config, ... }:
 let
   custom = {
     font = "JetBrainsMono";
@@ -8,8 +9,10 @@ let
     tertiary_accent = "#f5f5f5";
     button_empty = "#6c7086";
     button_active = "#b4befe";
-    background = "#11111B";
-    opacity = "0.98";
+    primary = "#${config.lib.stylix.colors.base05}";
+    secondary = "#${config.lib.stylix.colors.base04}";
+    background = "#${config.lib.stylix.colors.base00}";
+    opacity = "0.8";
   };
 in {
   stylix.targets.waybar.enable = false;
@@ -23,7 +26,6 @@ in {
         min-height: 0px;
         font-family: ${custom.font};
         font-weight: ${custom.font_weight};
-        opacity: ${custom.opacity};
     }
 
     window#waybar {
@@ -38,34 +40,36 @@ in {
       box-shadow: none;
       text-shadow: none;
       padding: 0px;
-      border-radius: 12px;
+      border-radius: 5px;
       margin-top: 4px;
       margin-bottom: 4px;
       padding-left: 4px;
       padding-right: 4px;
-      color: ${custom.text_color};
+      color: ${custom.primary};
       animation: gradient_f 20s ease-in infinite;
       transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
     }
 
     #workspaces button.active {
-      background: ${custom.text_color};
+      background: ${custom.primary};
       color: ${custom.background};
       margin-left: 4px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
       margin-right: 4px;
+      opacity: ${custom.opacity};
       animation: gradient_f 20s ease-in infinite;
       transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
     }
 
     #workspaces button:hover {
-      background: ${custom.tertiary_accent};
+      background: ${custom.secondary};
       color: ${custom.background};
       margin-left: 4px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 6px;
+      padding-right: 6px;
       margin-right: 8px;
+      opacity: ${custom.opacity};
       animation: gradient_f 20s ease-in infinite;
       transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
     }
@@ -79,14 +83,15 @@ in {
       margin-bottom: 4px;
       padding-left: 8px;
       padding-right: 4px;
-      color: ${custom.text_color};
+      color: ${custom.primary};
+      opacity: ${custom.opacity};
       animation: gradient_f 20s ease-in infinite;
       transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
     }
 
     #taskbar button.active {
-      background: ${custom.text_color};
-      color: ${custom.text_color};
+      background: ${custom.primary};
+      color: ${custom.background};
       margin-left: 8px;
       padding-left: 16px;
       padding-right: 16px;
@@ -108,7 +113,7 @@ in {
 
     #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock {
         font-size: ${custom.font_size};
-        color: ${custom.text_color};
+        color: ${custom.primary};
     }
 
     #cpu {
@@ -147,7 +152,7 @@ in {
 
     #custom-launcher {
         font-size: 20px;
-        color: ${custom.text_color};
+        color: ${custom.primary};
         font-weight: ${custom.font_weight};
         padding-left: 10px;
         padding-right: 15px;

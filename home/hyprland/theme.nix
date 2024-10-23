@@ -13,11 +13,11 @@
     };
 
     decoration = {
-      active_opacity = 0.8;
-      inactive_opacity = 0.8;
+      active_opacity = 0.9;
+      inactive_opacity = 0.9;
       dim_inactive = false;
       dim_strength = 0.2;
-      rounding = 16;
+      rounding = 5;
       blur = {
         enabled = true;
         brightness = 1.0;
