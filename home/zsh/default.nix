@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   programs.zsh = {
@@ -11,6 +11,7 @@
     shellAliases = {
       ll = "ls -l";
       vi = "nvim";
+      vif = "nvim $(fzf)";
       py = "python3";
       cd = "z";
     };

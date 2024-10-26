@@ -8,9 +8,6 @@
       "wl-paste --primary --watch wl-copy --primary --clear"
       "sleep 1 && swaylock"
       "waybar"
-      "swww init"
-      "sleep 1"
-      "swww img ~/.wallpapers/military.jpeg"
     ];
   };
 }

@@ -7,7 +7,6 @@
     ./hyprland
     ./kitty
     ./waybar
-    ./wofi
     ./rofi
     ./btop
     ./mako
@@ -31,9 +30,7 @@
   };
 
   programs.zsh.shellAliases = {
-    rebuild = ''
-      nix flake lock --update-input nixvim-flake ~/.config/nix &&
-      sudo nixos-rebuild switch --upgrade --flake ~/.config/nix'';
+    rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nix";
   };
 
   systemd.user.startServices = "sd-switch";

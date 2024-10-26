@@ -8,7 +8,8 @@
     "$browser" = "zen";
 
     bind = [
-      "ALT, space, exec, pkill wofi || wofi --show drun"
+      "ALT, space, exec, pkill rofi || rofi -show drun"
+      "$mainMod, =, exec, pkill rofi || rofi -show calc"
 
       "$mainMod, W, togglefloating," # toggle the window on focus to float
       "$mainMod, G, togglegroup," # toggle the window on focus to float

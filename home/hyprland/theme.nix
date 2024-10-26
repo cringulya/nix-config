@@ -1,3 +1,5 @@
+{ config, ... }:
+
 {
   stylix.targets.hyprland.enable = false;
   wayland.windowManager.hyprland.settings = {
@@ -5,7 +7,8 @@
       gaps_in = 2;
       gaps_out = 5;
       border_size = 5;
-      "col.active_border" = "rgba(bb9af7ff) rgba(b4f9f8ff) 45deg";
+      "col.active_border" =
+        "rgba(${config.lib.stylix.colors.base0C}ff) rgba(${config.lib.stylix.colors.base0D}ff) 45deg";
       "col.inactive_border" = "rgba(565f89cc) rgba(9aa5cecc) 45deg";
 
       allow_tearing = true;
@@ -33,7 +36,7 @@
       shadow_offset = "0 2";
       shadow_range = 20;
       shadow_render_power = 3;
-      "col.shadow" = "rgba(00000055)";
+      # "col.shadow" = "rgba(00000055)";
     };
 
     blurls = "waybar";

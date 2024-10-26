@@ -2,9 +2,9 @@
 
 {
   stylix.enable = true;
-  stylix.image = "${../../wallpapers/military.jpeg}";
-  stylix.base16Scheme =
-    "${pkgs.base16-schemes}/share/themes/rose-pine-moon.yaml";
+  stylix.image = "${../../wallpapers/waifu_pink.png}";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+  # stylix.base16Scheme = "${./themes/blueberry.yaml}";
 
   stylix.cursor = {
     package = pkgs.google-cursor;
