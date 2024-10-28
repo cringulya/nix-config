@@ -2,7 +2,7 @@
 
 {
   stylix.enable = true;
-  stylix.image = "${../../wallpapers/waifu_pink.png}";
+  stylix.image = "${../../wallpapers/ryo.jpeg}";
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
   # stylix.base16Scheme = "${./themes/blueberry.yaml}";
 
