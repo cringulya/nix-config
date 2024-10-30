@@ -50,10 +50,9 @@
       "workspace 1, class:^(brave-browser)$"
       "nodim,class:^(firefox)$"
 
-      "workspace 8,class:^(vesktop)$"
-      "workspace 10, title:^(Spotify Premium)$"
-
-      "workspace 9, class:^(org.telegram.desktop)$"
+      "workspace 8, class:^(vesktop)$"
+      "workspace 9, title:^(Spotify Premium)$"
+      "workspace 10, class:^(TelegramDesktop)$"
 
       "fullscreen,title:(Media viewer)"
     ];
