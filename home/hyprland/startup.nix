@@ -8,7 +8,9 @@
       "wl-paste --primary --watch wl-copy --primary --clear"
       "sleep 1 && swaylock"
       "waybar"
-      "swww daemon"
+      "swww-daemon"
+      "sleep 1"
+      "swww img ${../../wallpapers/ryo.jpeg}"
     ];
   };
 }
