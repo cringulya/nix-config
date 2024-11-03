@@ -4,11 +4,6 @@ let
     font = "JetBrainsMono";
     font_size = "15px";
     font_weight = "normal";
-    text_color = "#cdd6f4";
-    secondary_accent = "#89b4fa";
-    tertiary_accent = "#f5f5f5";
-    button_empty = "#6c7086";
-    button_active = "#b4befe";
     primary = "#${config.lib.stylix.colors.base05}";
     secondary = "#${config.lib.stylix.colors.base04}";
     background = "#${config.lib.stylix.colors.base00}";
@@ -101,8 +96,8 @@ in {
     }
 
     #taskbar button:hover {
-      background: ${custom.tertiary_accent};
-      color: ${custom.secondary_accent};
+      background: ${custom.secondary};
+      color: ${custom.background};
       margin-left: 8px;
       padding-left: 16px;
       padding-right: 16px;
