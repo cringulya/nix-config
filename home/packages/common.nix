@@ -54,8 +54,7 @@
       ]))
 
     spotify
-    revolt-desktop
-    yazi
+    # yazi
 
     inputs.nixvim-flake.packages.${pkgs.system}.default
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
