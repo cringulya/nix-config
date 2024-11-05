@@ -52,7 +52,7 @@
 
       "workspace 8, class:^(vesktop)$"
       "workspace 9, title:^(Spotify Premium)$"
-      "workspace 10, class:^(TelegramDesktop)$"
+      "workspace 10, class:^(org.telegram.desktop)$"
 
       "fullscreen,title:(Media viewer)"
     ];

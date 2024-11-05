@@ -15,6 +15,8 @@
       "$mainMod, G, togglegroup," # toggle the window on focus to float
       "$mainMod, F, fullscreen," # toggle the window on focus to fullscreen
       "$mainMod, P, pin"
+      "$mainMod, O, exec, hyprctl dispatch setprop active opaque toggle"
+
       "$mainMod, backspace, exec, wlogout"
       "$mainMod, B, exec, killall .waybar-wrapped || waybar" # toggle waybar
 
