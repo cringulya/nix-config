@@ -2,9 +2,8 @@
 
 {
   stylix.enable = true;
-  stylix.image = /home/artemson/.wallpapers/military.jpeg;
-  stylix.base16Scheme =
-    "${pkgs.base16-schemes}/share/themes/rose-pine-moon.yaml";
+  stylix.image = "${../../wallpapers/hyprchan.png}";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 
   stylix.fonts = {
     # packages = [ pkgs.twemoji-color-font pkgs.noto-fonts-emoji ];
