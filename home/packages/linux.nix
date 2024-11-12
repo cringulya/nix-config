@@ -10,6 +10,7 @@
     slurp
     gdb
     gf
+    docker
 
     mangohud
     protonup

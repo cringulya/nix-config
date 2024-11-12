@@ -50,6 +50,7 @@
         virtualenv
         pandas
         numpy
+        torch
         scikit-learn
       ]))
 

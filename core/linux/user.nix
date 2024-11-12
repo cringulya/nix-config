@@ -5,7 +5,7 @@
   users.users.artemson = {
     isNormalUser = true;
     description = "Artem Son";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
   };
 
