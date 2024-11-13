@@ -9,7 +9,6 @@
     ./waybar
     ./rofi
     ./btop
-    ./mako
     ./scripts
     ./wlogout
     ./mimeapps

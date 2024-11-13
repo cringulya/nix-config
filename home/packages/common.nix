@@ -51,6 +51,7 @@
         pandas
         numpy
         torch
+        torchvision
         scikit-learn
       ]))
 

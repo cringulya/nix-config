@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   # Allow unfree packages
@@ -16,6 +16,5 @@
     wl-clipboard
     nix-index
     clang
-
   ];
 }

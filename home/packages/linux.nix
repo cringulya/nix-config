@@ -14,6 +14,8 @@
 
     mangohud
     protonup
+    hyprpanel
+    ags
 
     inputs.zen-browser.packages."${system}".default
     obs-studio

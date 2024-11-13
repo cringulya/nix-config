@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  home.file.".config/mimeapps.list".text = let browser = "zen.desktop";
+  home.file.".config/mimeapps.list".text = let browser = "firefox";
   in ''
     [Default Applications]
     x-scheme-handler/http=${browser}

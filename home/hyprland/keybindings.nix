@@ -18,7 +18,7 @@
       "$mainMod, O, exec, hyprctl dispatch setprop active opaque toggle"
 
       "$mainMod, backspace, exec, wlogout"
-      "$mainMod, B, exec, killall .waybar-wrapped || waybar" # toggle waybar
+      "$mainMod, B, exec, hyprpanel -q; hyprpanel" # toggle waybar
 
       # Application shortcuts
       "$mainMod, return, exec, $term" # open terminal
