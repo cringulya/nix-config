@@ -27,8 +27,12 @@
     nodePackages.npm
     cmake
 
-    neomutt
+    # mail
     mutt-wizard
+    notmuch
+    abook
+    msmtp
+    cron
     pass
     isync
     lynx
@@ -38,6 +42,7 @@
     texlive.combined.scheme-full
 
     spoofdpi
+    yazi
     ffmpeg
     man-pages # extra man pages
 

@@ -11,6 +11,7 @@
     ./starship
     ./syncthing
     ./neovide
+    ./neomutt
     ./fish
     ./zsh
     ./clangd-format
