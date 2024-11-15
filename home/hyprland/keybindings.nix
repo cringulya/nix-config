@@ -5,7 +5,7 @@
     "$mainMod" = "SUPER";
     "$term" = "kitty";
     "$file" = "kitty -- yazi";
-    "$browser" = "firefox";
+    "$browser" = "google-chrome-stable";
 
     bind = [
       "ALT, space, exec, pkill rofi || rofi -show drun"

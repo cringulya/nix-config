@@ -29,6 +29,8 @@
     mpv # video player
     ncdu # disk space
     steam
+    chromium
+    google-chrome
     telegram-desktop
     vscode
   ]);

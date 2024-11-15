@@ -46,6 +46,7 @@
       "animation popin,class:^(kitty)$,title:^(update-sys)$"
 
       "workspace 2, class:^(firefox)$"
+      "workspace 2, class:^(google-chrome)$"
       "workspace 1, class:^(zen-alpha)$"
       "workspace 1, class:^(brave-browser)$"
       "nodim,class:^(firefox)$"

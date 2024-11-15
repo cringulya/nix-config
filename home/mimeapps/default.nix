@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  home.file.".config/mimeapps.list".text = let browser = "firefox";
+  home.file.".config/mimeapps.list".text = let browser = "google-chrome.desktop";
   in ''
     [Default Applications]
     x-scheme-handler/http=${browser}
