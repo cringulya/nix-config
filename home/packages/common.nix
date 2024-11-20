@@ -18,8 +18,6 @@
     haskellPackages.stack
     haskell.compiler.ghc947
     haskell.packages.ghc947.haskell-language-server
-    gcc
-    llvm_18
     ninja
     cargo
     gnumake
@@ -58,7 +56,6 @@
         pandas
         numpy
         torch
-        torchvision
         scikit-learn
       ]))
 

@@ -10,8 +10,8 @@
     ./zathura
     ./starship
     ./syncthing
-    ./neovide
     ./neomutt
+    ./emacs
     ./fish
     ./zsh
     ./clangd-format

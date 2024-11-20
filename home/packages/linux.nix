@@ -12,6 +12,9 @@
     gf
     docker
 
+    gcc
+    llvm_18
+
     mangohud
     protonup
     hyprpanel

@@ -15,6 +15,5 @@
     nix-prefetch-git
     wl-clipboard
     nix-index
-    clang
   ];
 }

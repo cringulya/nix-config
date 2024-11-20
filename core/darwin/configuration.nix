@@ -48,4 +48,6 @@
     width = 5.0;
     hidpi = true;
   };
+
+  environment.shells = [ pkgs.zsh ];
 }

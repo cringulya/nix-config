@@ -5,6 +5,7 @@
     ./common.nix
     ./packages/linux.nix
     ./hyprland
+    ./neovide
     ./kitty
     ./waybar
     ./rofi
