@@ -36,5 +36,6 @@
     google-chrome
     telegram-desktop
     vscode
+    lutris
   ]);
 }

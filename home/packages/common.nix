@@ -26,8 +26,10 @@
     nodejs
     nodePackages.npm
     cmake
+    clang-tools
 
     # mail
+    mu
     mutt-wizard
     notmuch
     abook
