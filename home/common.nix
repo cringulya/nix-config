@@ -11,6 +11,7 @@
     ./starship
     ./syncthing
     ./neomutt
+    ./neovide
     ./emacs
     ./fish
     ./zsh

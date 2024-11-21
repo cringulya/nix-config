@@ -22,7 +22,6 @@
 
     inputs.zen-browser.packages."${system}".default
     obs-studio
-    libreoffice-fresh
     openrgb-with-all-plugins
     firefox
     vesktop
