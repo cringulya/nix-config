@@ -19,6 +19,6 @@
       }
     ];
 
-    casks = [ "telegram" "pgadmin4" ];
+    casks = [ "telegram" "pgadmin4" "spotify" ];
   };
 }

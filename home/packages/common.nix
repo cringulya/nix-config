@@ -62,9 +62,6 @@
         scikit-learn
       ]))
 
-    spotify
-    # yazi
-
     inputs.nixvim-flake.packages.${pkgs.system}.default
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
   ];

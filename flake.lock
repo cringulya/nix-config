@@ -1020,11 +1020,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1732099126,
-        "narHash": "sha256-8zWvhr7xKxi0aeAX+XlT1AIx1ig1paTc2lnKy857kE4=",
+        "lastModified": 1732155275,
+        "narHash": "sha256-1OoAStDBHqh/ekgV2VN9NJr5ezQ9k3uNTldgIgrIpKk=",
         "owner": "cringulya",
         "repo": "nixvim-config",
-        "rev": "ed4c4f8f78d273575a8528173db01e9fa30bb2e9",
+        "rev": "c4b5fd420dbf5ba3a1d9d41efa03d5bd67780d96",
         "type": "github"
       },
       "original": {

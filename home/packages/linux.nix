@@ -20,6 +20,8 @@
     hyprpanel
     ags
 
+    spotify
+
     inputs.zen-browser.packages."${system}".default
     obs-studio
     openrgb-with-all-plugins
