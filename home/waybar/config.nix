@@ -79,7 +79,7 @@
       format = "{icon} {volume}%";
       format-muted = "󰖁 ";
       format-icons = { default = [ " " ]; };
-      scroll-step = 5;
+      scroll-step = 1;
       on-click = "pavucontrol -t 3";
     };
     "hyprland/language" = {

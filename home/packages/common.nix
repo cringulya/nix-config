@@ -48,6 +48,7 @@
     yazi
     ffmpeg
     man-pages # extra man pages
+    libtool
 
     (python3.withPackages (python-pkgs:
       with python-pkgs; [
@@ -61,6 +62,7 @@
         torch
         scikit-learn
       ]))
+
 
     inputs.nixvim-flake.packages.${pkgs.system}.default
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })

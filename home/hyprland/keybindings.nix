@@ -5,6 +5,7 @@
     "$mainMod" = "SUPER";
     "$term" = "kitty";
     "$file" = "kitty -- yazi";
+    "$editor" = "neovide";
     "$browser" = "google-chrome-stable";
 
     bind = [
@@ -18,12 +19,13 @@
       "$mainMod, O, exec, hyprctl dispatch setprop active opaque toggle"
 
       "$mainMod, backspace, exec, wlogout"
-      "$mainMod, B, exec, hyprpanel -q; hyprpanel" # toggle waybar
+      "$mainMod, B, exec, hyprpanel -q; hyprpanel"
 
       # Application shortcuts
       "$mainMod, return, exec, $term" # open terminal
       "$mainMod SHIFT, E, exec, $file" # open file manager
       "$mainMod, E, exec, $browser" # open browser
+      "$mainMod, N, exec, $editor" # open browser
       "CTRL SHIFT, ESCAPE, exec, kitty -- btop"
 
       "$mainMod, q, killactive,"
