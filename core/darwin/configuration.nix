@@ -34,8 +34,9 @@
     ./preferences.nix
     ./packages.nix
     ./homebrew.nix
-    ./yabai.nix
-    ./skhd.nix
+    ../../home/aerospace
+    # ./yabai.nix
+    # ./skhd.nix
     ./stylix.nix
   ];
 

@@ -26,6 +26,7 @@
     nodejs
     nodePackages.npm
     cmake
+    uv
     ghostscript
     clang-tools
 
@@ -62,7 +63,6 @@
         torch
         scikit-learn
       ]))
-
 
     inputs.nixvim-flake.packages.${pkgs.system}.default
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
