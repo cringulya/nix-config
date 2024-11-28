@@ -14,6 +14,8 @@
     tree
     nix-prefetch-git
 
+    devenv
+    cachix
     hlint
     haskellPackages.stack
     haskell.compiler.ghc947
@@ -26,7 +28,6 @@
     nodejs
     nodePackages.npm
     cmake
-    uv
     ghostscript
     clang-tools
 
@@ -51,6 +52,8 @@
     man-pages # extra man pages
     libtool
 
+    ruff
+    uv
     (python3.withPackages (python-pkgs:
       with python-pkgs; [
         pip

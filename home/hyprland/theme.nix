@@ -23,12 +23,12 @@
       rounding = 5;
       blur = {
         enabled = true;
-        # brightness = 1.0;
-        # contrast = 1.0;
-        # noise = 2.0e-2;
+        brightness = 1.0;
+        contrast = 1.0;
+        noise = 2.0e-2;
 
-        # passes = 3;
-        # size = 10;
+        passes = 3;
+        size = 10;
       };
 
       shadow = {
