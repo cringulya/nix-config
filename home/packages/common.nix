@@ -46,6 +46,7 @@
     pplatex
     texlive.combined.scheme-full
 
+    pgadmin4
     spoofdpi
     yazi
     ffmpeg
@@ -63,7 +64,8 @@
         virtualenv
         pandas
         numpy
-        torch
+        tqdm
+        torch-bin
         scikit-learn
       ]))
 

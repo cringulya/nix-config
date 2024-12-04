@@ -30,7 +30,7 @@
   programs = {
     git = {
       enable = true;
-      userName = "cringulya";
+      userName = "Artem Son";
       userEmail = "s0sis0n@yandex.ru";
     };
 
@@ -45,6 +45,7 @@
     config = {
       allowUnfree = true;
       allowUnfreePredicate = _: true;
+      cudaSupport = true;
     };
   };
 }

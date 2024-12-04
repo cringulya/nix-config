@@ -14,10 +14,12 @@
       vif = "nvim $(fzf)";
       py = "python3";
       cd = "z";
+      "c++" = "clang++";
     };
 
     initExtra = ''
       export ESCDELAY=0
+      export CXX=${pkgs.clang}/bin/clang++
     '';
   };
 }
