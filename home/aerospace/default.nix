@@ -25,7 +25,7 @@
         inner.vertical = 2;
         outer.left = 10;
         outer.bottom = 10;
-        outer.top = 30;
+        outer.top = 10;
         outer.right = 10;
       };
 

@@ -18,8 +18,6 @@
     cachix
     hlint
     haskellPackages.stack
-    haskell.compiler.ghc947
-    haskell.packages.ghc947.haskell-language-server
     ninja
     cargo
     gnumake
