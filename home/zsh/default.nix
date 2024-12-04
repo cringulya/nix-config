@@ -19,7 +19,6 @@
 
     initExtra = ''
       export ESCDELAY=0
-      export CXX=${pkgs.clang}/bin/clang++
     '';
   };
 }

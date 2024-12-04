@@ -27,7 +27,6 @@
     nodePackages.npm
     cmake
     ghostscript
-    clang-tools
 
     # mail
     mu

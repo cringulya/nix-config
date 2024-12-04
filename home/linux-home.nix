@@ -31,6 +31,9 @@
 
   programs.zsh.shellAliases = {
     rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nix";
+    initExtra = ''
+      export CXX=${pkgs.clang}/bin/clang++
+    '';
   };
 
   systemd.user.startServices = "sd-switch";

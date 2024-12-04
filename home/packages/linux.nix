@@ -13,6 +13,7 @@
     docker
 
     gcc
+    clang-tools
     llvm_18
     haskell.compiler.ghc947
     haskell.packages.ghc947.haskell-language-server

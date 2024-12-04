@@ -8,8 +8,6 @@
     neovim
     iterm2
     kitty
-    # clang
-    # gcc
     # arc-browser
     # raycast
   ];
