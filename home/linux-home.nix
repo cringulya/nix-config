@@ -5,7 +5,6 @@
     ./common.nix
     ./packages/linux.nix
     ./hyprland
-    # ./neovide
     ./kitty
     ./waybar
     ./rofi
@@ -29,8 +28,10 @@
       "\${HOME}/.steam/root/compatibilitytools.d";
   };
 
-  programs.zsh.shellAliases = {
-    rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nix";
+  programs.zsh = {
+    shellAliases = {
+      rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nix";
+    };
     initExtra = ''
       export CXX=${pkgs.clang}/bin/clang++
     '';

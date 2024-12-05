@@ -10,6 +10,7 @@
     ../../hardware-configuration.nix
     ./boot.nix
     ./packages.nix
+    ./postgres
     ./gaming.nix
     ./stylix.nix
     ./wayland.nix

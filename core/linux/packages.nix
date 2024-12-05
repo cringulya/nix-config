@@ -9,6 +9,7 @@
     wget
     git
     clang
+    gcc
     btop
     killall
     pavucontrol

@@ -14,6 +14,12 @@
     tree
     nix-prefetch-git
 
+    lua-language-server
+    stylua
+    luarocks
+    tree-sitter
+    texlab
+
     devenv
     cachix
     hlint
@@ -66,7 +72,8 @@
         scikit-learn
       ]))
 
-    inputs.nixvim-flake.packages.${pkgs.system}.default
+    neovim
+    # inputs.nixvim-flake.packages.${pkgs.system}.default
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
   ];
 

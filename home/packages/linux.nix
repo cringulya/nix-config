@@ -12,7 +12,6 @@
     gf
     docker
 
-    gcc
     clang-tools
     llvm_18
     haskell.compiler.ghc947

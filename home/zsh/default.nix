@@ -14,7 +14,6 @@
       vif = "nvim $(fzf)";
       py = "python3";
       cd = "z";
-      "c++" = "clang++";
     };
 
     initExtra = ''
