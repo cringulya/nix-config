@@ -19,6 +19,7 @@
     luarocks
     tree-sitter
     texlab
+    nil
 
     devenv
     cachix
@@ -57,10 +58,12 @@
     libtool
 
     ruff
+    pyright
     uv
     (python3.withPackages (python-pkgs:
       with python-pkgs; [
         pip
+        cvxopt
         opencv4
         jupyterlab
         matplotlib
