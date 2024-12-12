@@ -9,15 +9,15 @@
     # packages = [ pkgs.twemoji-color-font pkgs.noto-fonts-emoji ];
     monospace = {
       name = "Iosevka Nerd Font Mono";
-      package = pkgs.nerdfonts.override { fonts = [ "Iosevka" ]; };
+      package = pkgs.nerd-fonts.iosevka;
     };
     sansSerif = {
       name = "JetBrainsMono";
-      package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
+      package = pkgs.nerd-fonts.jetbrains-mono;
     };
     serif = {
       name = "JetBrainsMono";
-      package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
+      package = pkgs.nerd-fonts.jetbrains-mono;
     };
   };
 

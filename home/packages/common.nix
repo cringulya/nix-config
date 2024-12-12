@@ -77,7 +77,6 @@
 
     neovim
     # inputs.nixvim-flake.packages.${pkgs.system}.default
-    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
+    nerd-fonts.jetbrains-mono
   ];
-
 }
