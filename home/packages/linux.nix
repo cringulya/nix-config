@@ -40,5 +40,6 @@
     telegram-desktop
     vscode
     lutris
+    bottles
   ]);
 }
