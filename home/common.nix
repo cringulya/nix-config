@@ -27,6 +27,8 @@
 
   home.file.".config/snippets".source = ./snippets;
 
+  stylix.targets.neovim.enable = false;
+
   programs = {
     git = {
       enable = true;

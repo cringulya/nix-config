@@ -10,7 +10,7 @@
       "hyprpanel"
       "swww init"
       "sleep 1"
-      "swww img ${../../wallpapers/ryo.jpeg}"
+      "swww img ${../../wallpapers/anime-moon-landscape.jpg}"
     ];
   };
 }
