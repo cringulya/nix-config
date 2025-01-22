@@ -5,7 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     lanzaboote = {
-      url = "github:nix-community/lanzaboote/v0.4.1";
+      # TODO: Return the version back
+      url = "github:nix-community/lanzaboote";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -31,17 +32,14 @@
       url = "github:cringulya/nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-    };
   };
 
   outputs = inputs@{ self, nixpkgs, nix-darwin, lanzaboote, home-manager, ... }:
     let
       username = "artemson";
       inherit (self) outputs;
-    in {
+    in
+    {
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs username; };
         modules = [
@@ -76,25 +74,6 @@
                     mainProgram = "matugen";
                   };
                 };
-              })
-
-              (final: prev: {
-                python312 = prev.python312.override {
-                  packageOverrides = final: prevPy: {
-
-                    triton-bin = prevPy.triton-bin.overridePythonAttrs
-                      (oldAttrs: {
-                        postFixup = ''
-                          chmod +x "$out/${prev.python312.sitePackages}/triton/backends/nvidia/bin/ptxas"
-                          substituteInPlace $out/${prev.python312.sitePackages}/triton/backends/nvidia/driver.py \
-                            --replace \
-                              'return [libdevice_dir, *libcuda_dirs()]' \
-                              'return [libdevice_dir, "${prev.addDriverRunpath.driverLink}/lib", "${prev.cudaPackages.cuda_cudart}/lib/stubs/"]'
-                        '';
-                      });
-                  };
-                };
-                python312Packages = final.python312.pkgs;
               })
             ];
           }

@@ -1,6 +1,6 @@
 {
   wayland.windowManager.hyprland.settings = {
-    monitor = [ "DP-5,highrr,1920x0,auto" "DP-7, 1920x1080, 0x0, auto" ];
+    monitor = [ "DP-5,2560x1440@75,1920x0,auto" "DP-7, 1920x1080, 0x0, auto" ];
 
     input = {
       kb_layout = "us, ru";

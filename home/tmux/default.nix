@@ -8,6 +8,8 @@
       {
         plugin = tmuxPlugins.catppuccin;
         extraConfig = ''
+          set-option -g focus-events on
+
           set -g @catppuccin_flavour 'mocha'
           set -g @catppuccin_window_left_separator ""
           set -g @catppuccin_window_right_separator " "
@@ -58,6 +60,8 @@
       set -g prefix C-a
       unbind C-b
       bind-key C-b send-prefix
+      set -gq allow-passthrough on
+      set -g visual-activity off
 
       bind -r J resize-pane -D 3
       bind -r K resize-pane -U 3

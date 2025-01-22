@@ -11,8 +11,10 @@
     starship
     wget
     zoxide
+    gh
     tree
     nix-prefetch-git
+    pokemon-colorscripts-mac
 
 
     devenv
@@ -22,7 +24,6 @@
     ninja
     cargo
     gnumake
-    lua5_1
     lldb
     nodejs
     nodePackages.npm
@@ -43,6 +44,7 @@
     latexrun
     pplatex
     texlive.combined.scheme-full
+    typst
 
     pgadmin4
     spoofdpi
@@ -51,8 +53,8 @@
     man-pages # extra man pages
     libtool
     pandoc
+    asciidoctor-with-extensions
 
-    pyright
     uv
     (python3.withPackages (python-pkgs:
       with python-pkgs; [
@@ -65,29 +67,30 @@
         pandas
         numpy
         tqdm
-        torch-bin
         scikit-learn
       ]))
 
     # inputs.nixvim-flake.packages.${pkgs.system}.default
     nerd-fonts.jetbrains-mono
-    inputs.ghostty.packages.${pkgs.system}.default
-
   ];
 
   programs.neovim = {
     enable = true;
     extraLuaPackages = ps: [ ps.magick ];
     extraPackages = with pkgs; [
-      imagemagick
+      lua5_1
       imagemagick
       ruff
       lua-language-server
       stylua
+      prettierd
       luarocks
       tree-sitter
       texlab
       nil
+      marksman
+      pyright
+      nixpkgs-fmt
     ];
   };
 }
