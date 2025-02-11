@@ -10,7 +10,7 @@
       "hyprpanel"
       "swww init"
       "sleep 1"
-      "swww img ${../../wallpapers/anime-moon-landscape.jpg}"
+      "swww img ${../../wallpapers/chika-fujiwara-3840x2160-16148.jpg}"
     ];
   };
 }

@@ -80,8 +80,8 @@ in {
       };
     };
     networking = {
-      nameservers = [ "76.76.2.22#comss.dns.controld.com" ];
-      resolvconf.dnsSingleRequest = true;
+      # nameservers = [ "76.76.2.22#comss.dns.controld.com" ];
+      # resolvconf.dnsSingleRequest = true;
       firewall = {
         enable = false;
         allowedTCPPorts = [ 22 80 9993 51820 8080 443 1935 49152 8125 ];

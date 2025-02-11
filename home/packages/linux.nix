@@ -38,8 +38,8 @@
     chromium
     google-chrome
     telegram-desktop
-    vscode
     lutris
+    qbittorrent
     obsidian
     bottles
   ]);

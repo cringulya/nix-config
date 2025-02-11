@@ -19,8 +19,6 @@
     homeDirectory = "/home/artemson";
   };
 
-  home.file.".wallpapers".source = ../wallpapers;
-
   home.sessionVariables = {
     DEFAULT_BROWSER =
       "${inputs.zen-browser.packages.${pkgs.system}.default}/bin/zen";
