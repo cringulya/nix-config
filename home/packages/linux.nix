@@ -14,8 +14,8 @@
 
     clang-tools
     llvm_18
-    haskell.compiler.ghc947
-    haskell.packages.ghc947.haskell-language-server
+    ghc
+    haskell-language-server
 
     mangohud
     protonup
@@ -37,6 +37,7 @@
     steam
     chromium
     google-chrome
+    qutebrowser
     telegram-desktop
     lutris
     qbittorrent

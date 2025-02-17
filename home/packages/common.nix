@@ -32,14 +32,9 @@
 
     # mail
     mu
-    mutt-wizard
-    notmuch
-    abook
-    msmtp
     cron
     pass
     isync
-    lynx
 
     latexrun
     pplatex

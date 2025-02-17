@@ -32,14 +32,14 @@
         '';
       }
 
-      # {
-      # plugin = tmuxPlugins.resurrect;
-      # extraConfig = ''
-      #   set -g @resurrect-strategy-vim 'session'
-      #   set -g @resurrect-strategy-nvim 'session'
-      #   set -g @resurrect-capture-pane-contents 'on'
-      # '';
-      # }
+      {
+        plugin = tmuxPlugins.resurrect;
+        extraConfig = ''
+          set -g @resurrect-strategy-vim 'session'
+          set -g @resurrect-strategy-nvim 'session'
+          set -g @resurrect-capture-pane-contents 'on'
+        '';
+      }
 
       {
         plugin = tmuxPlugins.continuum;
