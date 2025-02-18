@@ -90,7 +90,7 @@
       set mime_type_query_command = "file --mime-type -b '%s' 2>/dev/null || true"
       set date_format="%d/%m/%y %I:%M%p"
       set index_format="%2C %Z %?X?A& ? %D %-15.15F %s (%-4.4c)"
-      set sort = 'reverse-date'
+      set use_threads=threads sort=reverse-last-date sort_aux=last-date
       set smtp_authenticators = 'gssapi:login'
       set query_command = "abook --mutt-query %s"
       set rfc2047_parameters = yes

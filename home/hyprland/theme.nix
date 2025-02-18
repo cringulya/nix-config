@@ -4,9 +4,9 @@
   stylix.targets.hyprland.enable = false;
   wayland.windowManager.hyprland.settings = {
     general = {
-      gaps_in = 2;
-      gaps_out = 5;
-      border_size = 5;
+      gaps_in = 5;
+      gaps_out = 10;
+      border_size = 4;
       "col.active_border" =
         "rgba(${config.lib.stylix.colors.base0C}ff) rgba(${config.lib.stylix.colors.base0D}ff) 45deg";
       "col.inactive_border" = "rgba(565f89cc) rgba(9aa5cecc) 45deg";
@@ -16,8 +16,8 @@
     };
 
     decoration = {
-      active_opacity = 0.9;
-      inactive_opacity = 0.9;
+      active_opacity = 1.0;
+      inactive_opacity = 1.0;
       dim_inactive = false;
       dim_strength = 0.2;
       rounding = 5;
