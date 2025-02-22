@@ -24,7 +24,7 @@
     ninja
     cargo
     gnumake
-    # lldb
+    lldb
     nodejs
     nodePackages.npm
     cmake

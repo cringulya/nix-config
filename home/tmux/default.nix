@@ -5,32 +5,23 @@
     enable = true;
     shell = "${pkgs.zsh}/bin/zsh";
     plugins = with pkgs; [
-      {
-        plugin = tmuxPlugins.catppuccin;
-        extraConfig = ''
-          set-option -g focus-events on
-
-          set -g @catppuccin_flavour 'mocha'
-          set -g @catppuccin_window_left_separator ""
-          set -g @catppuccin_window_right_separator " "
-          set -g @catppuccin_window_middle_separator " █"
-          set -g @catppuccin_window_number_position "right"
-
-          set -g @catppuccin_window_default_fill "number"
-          set -g @catppuccin_window_default_text "#W"
-
-          set -g @catppuccin_window_current_fill "number"
-          set -g @catppuccin_window_current_text "#W"
-
-          set -g @catppuccin_status_modules_right "directory session"
-          set -g @catppuccin_status_left_separator  " "
-          set -g @catppuccin_status_right_separator ""
-          set -g @catppuccin_status_fill "icon"
-          set -g @catppuccin_status_connect_separator "no"
-
-          set -g @catppuccin_directory_text $cwd
-        '';
-      }
+      # {
+      #   plugin = tmuxPlugins.catppuccin;
+      #   extraConfig = ''
+      #     set-option -g focus-events on
+      #
+      #
+      #     # Make the status line more pleasant.
+      #     set -g status-left ""
+      #     set -g status-right '#[fg=#{@thm_crust},bg=#{@thm_teal}] session: #S '
+      #
+      #     # Ensure that everything on the right side of the status line
+      #     # is included.
+      #     set -g status-right-length 100
+      #
+      #     set -g @catppuccin_flavour 'mocha'
+      #   '';
+      # }
 
       {
         plugin = tmuxPlugins.resurrect;
@@ -62,6 +53,8 @@
       bind-key C-b send-prefix
       set -gq allow-passthrough on
       set -g visual-activity off
+      set -g base-index 1
+      setw -g pane-base-index 1
 
       bind -r J resize-pane -D 3
       bind -r K resize-pane -U 3
@@ -79,6 +72,7 @@
       set-window-option -g mode-keys vi
       bind-key -T copy-mode-vi 'v' send -X begin-selection # start selecting text with "v"
       bind-key -T copy-mode-vi 'y' send -X copy-selection # copy text with "y"
+
     '';
   };
 }

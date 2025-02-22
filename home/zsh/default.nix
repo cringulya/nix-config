@@ -14,10 +14,13 @@
       vif = "nvim $(fzf)";
       py = "python3";
       cd = "z";
+      nshell = "nix-shell --command zsh";
     };
 
     initExtra = ''
       export ESCDELAY=0
+      export CC=clang
+      export CXX=clang++
     '';
   };
 }

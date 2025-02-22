@@ -13,7 +13,6 @@
     docker
 
     clang-tools
-    llvm_18
     ghc
     haskell-language-server
 
