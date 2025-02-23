@@ -12,7 +12,7 @@
     ./syncthing
     ./neomutt
     ./neovide
-    ./emacs
+    # ./emacs
     ./fish
     ./zsh
     ./clangd-format
