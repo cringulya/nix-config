@@ -13,8 +13,6 @@
     docker
 
     clang-tools
-    ghc
-    haskell-language-server
 
     mangohud
     protonup

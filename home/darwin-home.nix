@@ -6,6 +6,9 @@
   home.username = "artemson";
   home.homeDirectory = "/Users/artemson";
 
+
+  home.file.".config/aerospace/aerospace.toml".source = ./aerospace/aerospace.toml;
+
   programs.zsh = {
     # for vimtex zathura
     initExtra = ''
@@ -13,9 +16,7 @@
     '';
 
     shellAliases = {
-      rebuild = ''
-        nix flake lock --update-input nixvim-flake ~/.config/nix &&
-        darwin-rebuild switch --flake ~/.config/nix'';
+      rebuild = "darwin-rebuild switch --flake ~/.config/nix";
     };
   };
 }

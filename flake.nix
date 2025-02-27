@@ -105,7 +105,7 @@
         modules = [
           inputs.stylix.darwinModules.stylix
           ./core/darwin/configuration.nix
-          home-manager.darwinModules.home-manager
+          inputs.home-manager.darwinModules.home-manager
           {
             home-manager = {
               useGlobalPkgs = true;

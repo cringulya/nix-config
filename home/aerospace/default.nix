@@ -1,10 +1,11 @@
+{ pkgs, ... }:
+
 {
   services.aerospace = {
     enable = true;
     settings = {
       after-login-command = [ ];
-      after-startup-command = [ ];
-      # start-at-login = true;
+      after-startup-command = [ "exec-and-forget ${pkgs.sketchybar}/bin/sketchybar" ];
       enable-normalization-flatten-containers = true;
       enable-normalization-opposite-orientation-for-nested-containers = true;
       accordion-padding = 30;
@@ -25,7 +26,7 @@
         inner.vertical = 2;
         outer.left = 10;
         outer.bottom = 10;
-        outer.top = 10;
+        outer.top = 30;
         outer.right = 10;
       };
 

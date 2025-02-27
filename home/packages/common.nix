@@ -17,6 +17,8 @@
     pokemon-colorscripts-mac
 
 
+    ghc
+    haskell-language-server
     devenv
     cachix
     hlint
@@ -53,16 +55,10 @@
     uv
     (python3.withPackages (python-pkgs:
       with python-pkgs; [
-        pip
-        cvxopt
-        opencv4
         jupyterlab
         matplotlib
-        virtualenv
         pandas
         numpy
-        tqdm
-        scikit-learn
       ]))
 
     # inputs.nixvim-flake.packages.${pkgs.system}.default

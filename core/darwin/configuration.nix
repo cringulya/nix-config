@@ -9,6 +9,7 @@
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
   nix.package = pkgs.nix;
+  nix.enable = false;
 
   # Necessary for using flakes on this system.
   nix.settings.experimental-features = "nix-command flakes";
@@ -35,20 +36,18 @@
     ./packages.nix
     ./homebrew.nix
     ../../home/aerospace
-    # ./yabai.nix
-    # ./skhd.nix
     ./stylix.nix
   ];
 
-  services.sketchybar = { enable = true; };
+  # services.sketchybar = { enable = true; };
   # borders active_color=0x9c6942f5 inactive_color=0xff494d64 width=5.0 &
-  services.jankyborders = {
-    enable = true;
-    active_color = "0x9c6942f5";
-    inactive_color = "0xff494d64";
-    width = 5.0;
-    hidpi = true;
-  };
+  # services.jankyborders = {
+  #   enable = true;
+  #   active_color = "0x9c6942f5";
+  #   inactive_color = "0xff494d64";
+  #   width = 5.0;
+  #   hidpi = true;
+  # };
 
   environment.shells = [ pkgs.zsh ];
 }
