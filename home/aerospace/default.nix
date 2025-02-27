@@ -26,7 +26,7 @@
         inner.vertical = 2;
         outer.left = 10;
         outer.bottom = 10;
-        outer.top = 30;
+        outer.top = 10;
         outer.right = 10;
       };
 
@@ -34,7 +34,7 @@
 
         alt-enter = "exec-and-forget /etc/profiles/per-user/artemson/bin/kitty";
         alt-e =
-          "exec-and-forget open -a /Applications/Arc.app/Contents/MacOS/Arc";
+          "exec-and-forget open -a /Applications/Safari.app/Contents/MacOS/Safari";
 
         alt-slash = "layout tiles horizontal vertical";
         alt-comma = "layout accordion horizontal vertical";
@@ -64,16 +64,16 @@
         alt-8 = "workspace 8";
         alt-9 = "workspace 9";
         alt-0 = "workspace 10";
-        alt-shift-1 = "move-node-to-workspace 1";
-        alt-shift-2 = "move-node-to-workspace 2";
-        alt-shift-3 = "move-node-to-workspace 3";
-        alt-shift-4 = "move-node-to-workspace 4";
-        alt-shift-5 = "move-node-to-workspace 5";
-        alt-shift-6 = "move-node-to-workspace 6";
-        alt-shift-7 = "move-node-to-workspace 7";
-        alt-shift-8 = "move-node-to-workspace 8";
-        alt-shift-9 = "move-node-to-workspace 9";
-        alt-shift-0 = "move-node-to-workspace 10";
+        alt-shift-1 = "move-node-to-workspace 1 --focus-follows-window";
+        alt-shift-2 = "move-node-to-workspace 2 --focus-follows-window";
+        alt-shift-3 = "move-node-to-workspace 3 --focus-follows-window";
+        alt-shift-4 = "move-node-to-workspace 4 --focus-follows-window";
+        alt-shift-5 = "move-node-to-workspace 5 --focus-follows-window";
+        alt-shift-6 = "move-node-to-workspace 6 --focus-follows-window";
+        alt-shift-7 = "move-node-to-workspace 7 --focus-follows-window";
+        alt-shift-8 = "move-node-to-workspace 8 --focus-follows-window";
+        alt-shift-9 = "move-node-to-workspace 9 --focus-follows-window";
+        alt-shift-0 = "move-node-to-workspace 10 --focus-follows-window";
 
         alt-tab = "workspace-back-and-forth";
         alt-shift-tab = "move-workspace-to-monitor --wrap-around next";
@@ -96,10 +96,20 @@
         alt-shift-l = [ "join-with right" "mode main" ];
       };
 
-      # on-window-detected = [''
-      #   if.app-id = "company.thebrowser.Browser"
-      #   run = "move-node-to-workspace 2"
-      # ''];
+      on-window-detected = [
+        {
+          "if".app-id = "com.apple.Safari";
+          run = "move-node-to-workspace 2";
+        }
+        {
+          "if".app-id = "ru.keepcoder.Telegram";
+          run = "move-node-to-workspace 10";
+        }
+        {
+          "if".app-id = "com.spotify.client";
+          run = "move-node-to-workspace 9";
+        }
+      ];
     };
   };
 }

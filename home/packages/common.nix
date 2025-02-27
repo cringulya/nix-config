@@ -36,6 +36,7 @@
     mu
     cron
     pass
+    gnupg
     isync
 
     latexrun

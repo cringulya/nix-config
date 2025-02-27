@@ -7,8 +7,6 @@
   };
 
   # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
-  nix.package = pkgs.nix;
   nix.enable = false;
 
   # Necessary for using flakes on this system.

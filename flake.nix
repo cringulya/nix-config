@@ -28,10 +28,6 @@
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
-    nixvim-flake = {
-      url = "github:cringulya/nixvim-config";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = inputs@{ self, nixpkgs, nix-darwin, lanzaboote, home-manager, ... }:

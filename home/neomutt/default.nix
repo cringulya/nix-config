@@ -11,7 +11,7 @@
   ];
 
   programs.mbsync.enable = true;
-  services.mbsync.enable = true;
+  # services.mbsync.enable = true;
   programs.msmtp.enable = true;
   programs.notmuch = {
     enable = true;
