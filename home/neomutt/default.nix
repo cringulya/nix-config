@@ -30,10 +30,7 @@
       mbsync = {
         enable = true;
         create = "maildir";
-        groups."sonartem@icloud.com".channels."sent".farPattern = "Sent Messages";
-        groups."sonartem@icloud.com".channels."sent".nearPattern = "Sent";
       };
-      msmtp.enable = true;
       notmuch.enable = true;
       # signature = {
       #   text = ''
@@ -42,12 +39,30 @@
       #   showSignature = "append";
       # };
       passwordCommand = "pass show sonartem@icloud.com";
-      imap.host = "imap.mail.me.com";
+      imap = {
+        host = "imap.mail.me.com";
+        port = 993;
+      };
+      msmtp.enable = true;
       smtp = {
         host = "smtp.mail.me.com";
+        port = 587;
+        tls = {
+          enable = true;
+          useStartTls = true;
+        };
       };
       neomutt = {
         enable = true;
+        extraConfig = ''
+          set record='+Sent Messages'
+          bind index,pager gs noop
+          bind index,pager Ms noop
+          bind index,pager Cs noop
+          macro index,pager gs "<change-folder>=Sent Messages<enter>" "go to sent"
+          macro index,pager Ms ";<save-message>=Sent Messages<enter>" "move mail to sent"
+          macro index,pager Cs ";<copy-message>=Sent Messages<enter>" "copy mail to sent"
+        '';
       };
     };
 
@@ -68,6 +83,14 @@
       msmtp.enable = true;
       neomutt = {
         enable = true;
+        extraConfig = ''
+          bind index,pager gs noop
+          bind index,pager Ms noop
+          bind index,pager Cs noop
+          macro index,pager gs "<change-folder>=Sent<enter>" "go to sent"
+          macro index,pager Ms ";<save-message>=Sent<enter>" "move mail to sent"
+          macro index,pager Cs ";<copy-message>=Sent<enter>" "copy mail to sent"
+        '';
       };
     };
   };
@@ -90,7 +113,7 @@
       set mime_type_query_command = "file --mime-type -b '%s' 2>/dev/null || true"
       set date_format="%d/%m/%y %I:%M%p"
       set index_format="%2C %Z %?X?A& ? %D %-15.15F %s (%-4.4c)"
-      set use_threads=threads sort=reverse-last-date-received sort_aux=date
+      set sort = 'reverse-date'
       set smtp_authenticators = 'gssapi:login'
       set query_command = "abook --mutt-query %s"
       set rfc2047_parameters = yes
@@ -159,9 +182,6 @@
       macro index,pager gi "<change-folder>=Inbox<enter>" "go to inbox"
       macro index,pager Mi ";<save-message>=Inbox<enter>" "move mail to inbox"
       macro index,pager Ci ";<copy-message>=Inbox<enter>" "copy mail to inbox"
-      macro index,pager gs "<change-folder>=Sent<enter>" "go to sent"
-      macro index,pager Ms ";<save-message>=Sent<enter>" "move mail to sent"
-      macro index,pager Cs ";<copy-message>=Sent<enter>" "copy mail to sent"
       macro index,pager gd "<change-folder>=Drafts<enter>" "go to drafts"
       macro index,pager Md ";<save-message>=Drafts<enter>" "move mail to drafts"
       macro index,pager Cd ";<copy-message>=Drafts<enter>" "copy mail to drafts"

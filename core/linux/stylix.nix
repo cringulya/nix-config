@@ -4,7 +4,7 @@
   stylix.enable = true;
   stylix.targets.chromium.enable = false;
   stylix.image = "${../../wallpapers/anime-moon-landscape.jpg}";
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
   # stylix.base16Scheme = "${./themes/blueberry.yaml}";
 
   stylix.cursor = {
