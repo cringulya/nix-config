@@ -42,6 +42,7 @@
     latexrun
     pplatex
     texlive.combined.scheme-full
+    texlivePackages.termes-otf
     typst
 
     pgadmin4
@@ -64,6 +65,9 @@
 
     # inputs.nixvim-flake.packages.${pkgs.system}.default
     nerd-fonts.jetbrains-mono
+    lmodern
+    libertinus
+    cm_unicode
   ];
 
   programs.neovim = {
