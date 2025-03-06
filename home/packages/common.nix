@@ -19,6 +19,8 @@
 
     ghc
     haskell-language-server
+    jdk
+    maven
     devenv
     cachix
     hlint
@@ -87,6 +89,7 @@
       marksman
       pyright
       nixpkgs-fmt
+      jdt-language-server
     ];
   };
 }
