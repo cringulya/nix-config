@@ -34,6 +34,11 @@
     #   export CXX=${pkgs.clang}/bin/clang++
     # '';
   };
+  programs.fish = {
+    shellAliases = {
+      rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nix";
+    };
+  };
 
   systemd.user.startServices = "sd-switch";
 }

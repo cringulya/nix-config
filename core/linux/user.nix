@@ -6,8 +6,8 @@
     isNormalUser = true;
     description = "Artem Son";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
-    shell = pkgs.zsh;
   };
 
+  users.defaultUserShell = pkgs.fish;
   nix.settings.allowed-users = [ "artemson" ];
 }
