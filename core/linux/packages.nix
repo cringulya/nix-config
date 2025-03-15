@@ -15,7 +15,15 @@
     pavucontrol
     pamixer
     nix-prefetch-git
-    wl-clipboard
     nix-index
+
+    hyprpanel
+    ags
+    libgtop
+    bluez
+    dart-sass
+    wl-clipboard
+    upower
+    gvfs
   ];
 }

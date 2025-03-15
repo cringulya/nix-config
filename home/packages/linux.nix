@@ -16,8 +16,6 @@
 
     mangohud
     protonup
-    hyprpanel
-    ags
 
     spotify
 

@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
@@ -8,9 +10,8 @@
       "wl-paste --primary --watch wl-copy --primary --clear"
       "sleep 1 && swaylock"
       "hyprpanel"
-      "swww init"
-      "sleep 1"
-      "swww img ${../../wallpapers/chika-fujiwara-3840x2160-16148.jpg}"
+      "telegram-desktop"
+      "spotify"
     ];
   };
 }
