@@ -21,6 +21,7 @@
     haskell-language-server
     jdk
     maven
+    gradle
     devenv
     cachix
     hlint
