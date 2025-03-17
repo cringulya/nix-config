@@ -41,4 +41,5 @@
   };
 
   systemd.user.startServices = "sd-switch";
+  services.mbsync.enable = true;
 }

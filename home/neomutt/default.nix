@@ -11,7 +11,6 @@
   ];
 
   programs.mbsync.enable = true;
-  # services.mbsync.enable = true;
   programs.msmtp.enable = true;
   programs.notmuch = {
     enable = true;
@@ -62,6 +61,8 @@
           macro index,pager gs "<change-folder>=Sent Messages<enter>" "go to sent"
           macro index,pager Ms ";<save-message>=Sent Messages<enter>" "move mail to sent"
           macro index,pager Cs ";<copy-message>=Sent Messages<enter>" "copy mail to sent"
+          set use_threads=no
+          set sort=date
         '';
       };
     };
@@ -90,6 +91,8 @@
           macro index,pager gs "<change-folder>=Sent<enter>" "go to sent"
           macro index,pager Ms ";<save-message>=Sent<enter>" "move mail to sent"
           macro index,pager Cs ";<copy-message>=Sent<enter>" "copy mail to sent"
+          set use_threads=no
+          set sort=date
         '';
       };
     };
@@ -113,7 +116,6 @@
       set mime_type_query_command = "file --mime-type -b '%s' 2>/dev/null || true"
       set date_format="%d/%m/%y %I:%M%p"
       set index_format="%2C %Z %?X?A& ? %D %-15.15F %s (%-4.4c)"
-      set sort = 'reverse-date'
       set smtp_authenticators = 'gssapi:login'
       set query_command = "abook --mutt-query %s"
       set rfc2047_parameters = yes
