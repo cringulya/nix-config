@@ -82,8 +82,8 @@
       "$mainMod SHIFT, j, movewindow, d"
 
       # screenshots
-      "SHIFT ALT, 3, exec, ${pkgs.grimblast}/bin/grimblast --notify --cursor  copy area"
-      ",Print, exec, grimblast --notify --cursor copy output"
+      "SHIFT ALT, s, exec, ${pkgs.grimblast}/bin/grimblast copy area"
+      ",Print, exec, grimblast copy output"
 
       # Scroll through existing workspaces with mainMod + scroll
       "$mainMod, mouse_down, workspace, e-1"

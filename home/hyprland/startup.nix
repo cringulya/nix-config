@@ -9,6 +9,7 @@
       "nm-applet"
       "wl-paste --primary --watch wl-copy --primary --clear"
       "sleep 1 && swaylock"
+      "${./suspend.sh}"
       "hyprpanel"
       "telegram-desktop"
       "spotify"

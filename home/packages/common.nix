@@ -91,6 +91,7 @@
       pyright
       nixpkgs-fmt
       jdt-language-server
+      tinymist
     ];
   };
 }
