@@ -47,6 +47,7 @@
     texlive.combined.scheme-full
     texlivePackages.termes-otf
     typst
+    tinymist
 
     pgadmin4
     spoofdpi
