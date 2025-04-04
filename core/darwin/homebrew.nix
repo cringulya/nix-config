@@ -9,10 +9,10 @@
     taps = [ "homebrew/services" ];
 
     brews = [
-      # {
-      #   name = "dbus";
-      #   start_service = true;
-      # }
+      {
+        name = "dbus";
+        start_service = true;
+      }
     ];
 
     casks = [ "telegram" "spotify" ];
