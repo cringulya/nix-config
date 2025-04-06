@@ -21,7 +21,7 @@
 
   home.sessionVariables = {
     DEFAULT_BROWSER =
-      "${inputs.zen-browser.packages.${pkgs.system}.default}/bin/zen";
+      "${pkgs.firefox}/bin/firefox";
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\${HOME}/.steam/root/compatibilitytools.d";
   };

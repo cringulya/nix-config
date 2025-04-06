@@ -6,7 +6,7 @@
     "$term" = "kitty";
     "$file" = "kitty -- yazi";
     "$editor" = "neovide";
-    "$browser" = "google-chrome-stable";
+    "$browser" = "firefox";
 
     bind = [
       "ALT, space, exec, pkill rofi || rofi -show drun"

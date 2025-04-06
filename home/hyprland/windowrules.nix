@@ -25,8 +25,6 @@
       "nodim, title:^(Picture-in-Picture)$"
       "nodim, title:^(Picture in picture)$"
 
-      "nodim, class:^(zen-alpha)$"
-
       "float,class:^(qt5ct)$"
       "float,class:^(nwg-look)$"
       "float,class:^(org.kde.ark)$"
@@ -47,7 +45,6 @@
 
       "workspace 2, class:^(firefox)$"
       "workspace 2, class:^(google-chrome)$"
-      "workspace 1, class:^(zen-alpha)$"
       "workspace 1, class:^(brave-browser)$"
       "nodim,class:^(firefox)$"
 
