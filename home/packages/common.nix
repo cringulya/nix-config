@@ -93,6 +93,7 @@
       nixpkgs-fmt
       jdt-language-server
       tinymist
+      cmake-language-server
     ];
   };
 }

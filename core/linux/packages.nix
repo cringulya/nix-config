@@ -19,7 +19,6 @@
 
     hyprpanel
     swayidle
-    swaylock
     ags
     libgtop
     bluez

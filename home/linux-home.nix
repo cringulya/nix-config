@@ -10,6 +10,7 @@
     ./rofi
     ./btop
     ./scripts
+    ./swaylock
     ./wlogout
     ./mimeapps
   ];
@@ -23,7 +24,7 @@
     DEFAULT_BROWSER =
       "${pkgs.firefox}/bin/firefox";
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =
-      "\${HOME}/.steam/root/compatibilitytools.d";
+      "\${HOME}/.steam/root/compatabilitytools.d";
   };
 
   programs.zsh = {
