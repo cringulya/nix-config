@@ -1,7 +1,10 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./common.nix ./sketchybar ./packages/darwin.nix ];
+  imports = [
+    ../common
+    ../../modules/sketchybar
+  ];
 
   home.username = "artemson";
   home.homeDirectory = "/Users/artemson";
@@ -21,9 +24,6 @@
   };
   programs.fish = {
     shellInit = ''
-      export ESCDELAY=0
-      export CC=clang
-      export CXX=clang++
       export MallocNanoZone='0'
       export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
     '';

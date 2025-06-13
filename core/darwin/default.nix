@@ -30,10 +30,10 @@
   '';
 
   imports = [
+    ./aerospace
     ./preferences.nix
     ./packages.nix
     ./homebrew.nix
-    ../../home/aerospace
     ./stylix.nix
   ];
 

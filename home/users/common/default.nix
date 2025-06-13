@@ -1,6 +1,40 @@
 { pkgs, inputs, ... }:
 
 {
+  programs.home-manager.enable = true;
+
+  imports = [
+    ../../modules/zathura
+    ../../modules/starship
+    ../../modules/syncthing
+    ../../modules/neomutt
+    ../../modules/neovim
+    ../../modules/neovide
+    ../../modules/fish
+    ../../modules/zsh
+    ../../modules/clangd-format
+    ../../modules/tmux
+    ../../modules/kitty
+    ../../modules/latexindent
+    ../../modules/yazi
+  ];
+
+  fonts.fontconfig.enable = true;
+
+  programs = {
+    git = {
+      enable = true;
+      userName = "Artem Son";
+      userEmail = "s0sis0n@yandex.ru";
+    };
+
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+      enableFishIntegration = true;
+    };
+  };
+
   home.packages = with pkgs; [
     zip
     unzip
@@ -74,28 +108,6 @@
     cm_unicode
   ];
 
-  programs.neovim = {
-    enable = true;
-    extraLuaConfig = "";
-    extraLuaPackages = ps: [ ps.magick ];
-    extraPackages = with pkgs; [
-      lua5_1
-      imagemagick
-      ruff
-      lua-language-server
-      stylua
-      prettierd
-      luarocks
-      tree-sitter
-      texlab
-      nil
-      marksman
-      pyright
-      nixpkgs-fmt
-      jdt-language-server
-      tinymist
-      cmake-language-server
-      typescript-language-server
-    ];
-  };
+  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
+  home.stateVersion = "23.11";
 }

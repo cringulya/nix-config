@@ -7,8 +7,7 @@
 {
   imports = [
     # Include the results of the hardware scan.
-    ../../hardware-configuration.nix
-    ./amnezia.nix
+    ./hardware-configuration.nix
     ./boot.nix
     ./packages.nix
     ./postgres

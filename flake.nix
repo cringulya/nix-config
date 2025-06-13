@@ -50,14 +50,8 @@
               backupFileExtension = "backup";
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.artemson = {
-                imports = [
-                  inputs.hyprland.homeManagerModules.default
-                  ./home/linux-home.nix
-                ];
-              };
+              users.artemson = ./home/users/nixos;
               extraSpecialArgs = { inherit inputs outputs username; };
-
             };
           }
         ];
@@ -76,7 +70,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.artemson = { imports = [ ./home/darwin-home.nix ]; };
+              users.artemson = ./home/users/macbook;
               extraSpecialArgs = { inherit inputs; };
             };
           }
