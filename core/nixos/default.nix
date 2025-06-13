@@ -8,6 +8,7 @@
   imports = [
     # Include the results of the hardware scan.
     ../../hardware-configuration.nix
+    ./amnezia.nix
     ./boot.nix
     ./packages.nix
     ./postgres
@@ -19,7 +20,7 @@
     ./audio.nix
     ./xserver.nix
     ./user.nix
-    ./zapret.nix
+    # ./zapret.nix
     inputs.lanzaboote.nixosModules.lanzaboote
   ];
 
@@ -84,6 +85,7 @@
   };
 
   programs = {
+    amnezia-vpn.enable = true;
     fish.enable = true;
     zsh.enable = true;
     gnupg.agent = {
@@ -93,8 +95,6 @@
   };
 
   services.hardware.openrgb.enable = true;
-
-  zapret.enable = true;
 
   virtualisation.docker = {
     enable = true;

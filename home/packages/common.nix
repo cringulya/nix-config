@@ -76,6 +76,7 @@
 
   programs.neovim = {
     enable = true;
+    extraLuaConfig = "";
     extraLuaPackages = ps: [ ps.magick ];
     extraPackages = with pkgs; [
       lua5_1
@@ -94,6 +95,7 @@
       jdt-language-server
       tinymist
       cmake-language-server
+      typescript-language-server
     ];
   };
 }

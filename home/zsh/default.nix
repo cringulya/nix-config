@@ -17,7 +17,7 @@
       nshell = "nix-shell --command zsh";
     };
 
-    initExtra = ''
+    initContent = ''
       export ESCDELAY=0
       export CC=clang
       export CXX=clang++

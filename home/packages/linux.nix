@@ -5,6 +5,7 @@
     neofetch
 
     wlogout
+    hyprsunset
     swww
     grimblast
     slurp
@@ -13,6 +14,7 @@
     docker
 
     clang-tools
+    antlr
 
     mangohud
     protonup

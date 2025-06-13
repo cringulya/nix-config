@@ -1,4 +1,5 @@
 {
+  stylix.targets.neovide.enable = false;
   programs.neovide = {
     enable = true;
     settings = {

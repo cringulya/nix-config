@@ -18,6 +18,8 @@
       set scroll-full-overlap 0.01
       set scroll-step 50
 
+      set font "Iosevka NFM 20"
+
       #zoom settings
       set zoom-min 10
       set guioptions ""

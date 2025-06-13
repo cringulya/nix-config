@@ -9,7 +9,6 @@
 
   environment.systemPackages = with pkgs; [
     git
-    neovim
     iterm2
     kitty
     # arc-browser

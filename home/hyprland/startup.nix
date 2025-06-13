@@ -13,6 +13,7 @@
       "hyprpanel"
       "telegram-desktop"
       "spotify"
+      "kitty"
     ];
   };
 }
