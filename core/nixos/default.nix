@@ -27,12 +27,12 @@
 
   hardware.bluetooth.enable = true;
   services.printing.enable = true;
-  services.logind.extraConfig = ''
-    IdleAction=suspend
-    IdleActionSec=600  # 10 minutes (600 seconds)
-    HandleLidSwitch=suspend
-    HandlePowerKey=suspend
-  '';
+  systemd.sleep.extraConfig = ''
+    AllowSuspend=yes
+    AllowHibernation=no
+    AllowSuspendThenHibernate=no
+    AllowHybridSleep=yes
+  ''; # Clamshell Mode
 
   # This will add each flake input as a registry
   # To make nix3 commands consistent with your flake
