@@ -15,6 +15,6 @@
       }
     ];
 
-    casks = [ "telegram" "spotify" "zen" ];
+    casks = [ "telegram" "spotify" "zen" "hammerspoon" ];
   };
 }

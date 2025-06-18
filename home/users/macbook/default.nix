@@ -1,10 +1,6 @@
 { pkgs, ... }:
 
 {
-  imports = [
-    ../common
-  ];
-
   home.username = "artemson";
   home.homeDirectory = "/Users/artemson";
 
@@ -27,4 +23,9 @@
       rebuild = "darwin-rebuild switch --flake ~/.config/nix";
     };
   };
+
+  imports = [
+    ../common
+    ../../modules/hammerspoon
+  ];
 }
