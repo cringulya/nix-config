@@ -26,6 +26,7 @@
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs = inputs@{ self, nixpkgs, nix-darwin, lanzaboote, home-manager, ... }:
@@ -35,7 +36,7 @@
     in
     {
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs outputs username; };
+        specialArgs = { inherit inputs outputs username; system = "x86_64-linux"; };
         modules = [
           inputs.stylix.nixosModules.stylix
           {
