@@ -18,7 +18,6 @@
     nix-index
 
     hyprpanel
-    swayidle
     ags
     libgtop
     bluez

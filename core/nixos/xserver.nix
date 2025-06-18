@@ -14,10 +14,6 @@
         enable = true;
         user = "${username}";
       };
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
     };
   };
 

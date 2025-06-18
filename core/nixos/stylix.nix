@@ -3,7 +3,7 @@
 {
   stylix.enable = true;
   stylix.image = "${../../wallpapers/nix-catgirl.png}";
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/oxocarbon-dark.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
   # stylix.base16Scheme = "${./themes/blueberry.yaml}";
 
   stylix.cursor = {

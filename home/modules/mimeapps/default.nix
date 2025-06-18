@@ -7,5 +7,7 @@
     "x-scheme-handler/https" = "zen-beta.desktop";
     "text/html" = "zen-beta.desktop";
     "application/pdf" = "org.pwmt.zathura.desktop";
+    "x-scheme-handler/tg" = "org.telegram.desktop.desktop";
+    "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
   };
 }
