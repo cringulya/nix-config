@@ -3,14 +3,10 @@
 {
   imports = [
     ../common
-    ../../modules/sketchybar
   ];
 
   home.username = "artemson";
   home.homeDirectory = "/Users/artemson";
-
-
-  home.file.".config/aerospace/aerospace.toml".source = ./aerospace/aerospace.toml;
 
   programs.zsh = {
     # for vimtex zathura

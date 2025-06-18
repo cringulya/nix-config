@@ -6,6 +6,8 @@
     shell = pkgs.fish;
   };
 
+  system.primaryUser = "artemson";
+
   # Auto upgrade nix package and the daemon service.
   nix.enable = false;
 
@@ -31,13 +33,13 @@
 
   imports = [
     ./aerospace
+    ./sketchybar
     ./preferences.nix
     ./packages.nix
     ./homebrew.nix
     ./stylix.nix
   ];
 
-  # services.sketchybar = { enable = true; };
   # borders active_color=0x9c6942f5 inactive_color=0xff494d64 width=5.0 &
   # services.jankyborders = {
   #   enable = true;
@@ -47,5 +49,5 @@
   #   hidpi = true;
   # };
 
-  environment.shells = [ pkgs.zsh ];
+  environment.shells = [ pkgs.fish ];
 }

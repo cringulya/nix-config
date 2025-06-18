@@ -5,13 +5,12 @@
     enable = true;
     settings = {
       after-login-command = [ ];
-      after-startup-command = [ "exec-and-forget ${pkgs.sketchybar}/bin/sketchybar" ];
       enable-normalization-flatten-containers = true;
       enable-normalization-opposite-orientation-for-nested-containers = true;
       accordion-padding = 30;
 
       exec-on-workspace-change = [
-        "/bin/sh"
+        "${pkgs.fish}/bin/fish"
         "-c"
         "sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE"
       ];
@@ -26,7 +25,7 @@
         inner.vertical = 2;
         outer.left = 10;
         outer.bottom = 10;
-        outer.top = 10;
+        outer.top = 30;
         outer.right = 10;
       };
 
@@ -34,7 +33,7 @@
 
         alt-enter = "exec-and-forget /etc/profiles/per-user/artemson/bin/kitty";
         alt-e =
-          "exec-and-forget open -a /Applications/Safari.app/Contents/MacOS/Safari";
+          "exec-and-forget open -a /Applications/Zen.app/Contents/MacOS/zen";
 
         alt-slash = "layout tiles horizontal vertical";
         alt-comma = "layout accordion horizontal vertical";
@@ -98,7 +97,7 @@
 
       on-window-detected = [
         {
-          "if".app-id = "com.apple.Safari";
+          "if".app-id = "app.zen-browser.zen";
           run = "move-node-to-workspace 2";
         }
         {

@@ -106,8 +106,6 @@
     lmodern
     libertinus
     cm_unicode
-
-    inputs.zen-browser.packages."${pkgs.system}".default
   ];
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion

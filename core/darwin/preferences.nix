@@ -14,6 +14,6 @@
     screencapture.location = "~/Pictures/screenshots";
     screensaver.askForPasswordDelay = 10;
     NSGlobalDomain."com.apple.keyboard.fnState" = true;
-    NSGlobalDomain._HIHideMenuBar = false;
+    NSGlobalDomain._HIHideMenuBar = true;
   };
 }

@@ -23,12 +23,6 @@
         open = [
           { run = "xdg-open $@"; orphan = true; }
         ];
-        play = [
-          {
-            run = "${pkgs.vlc}/bin/vlc $@";
-            orphan = true;
-          }
-        ];
       };
     };
   };

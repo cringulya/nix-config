@@ -77,5 +77,7 @@
     qbittorrent
     obsidian
     bottles
+
+    inputs.zen-browser.packages."${pkgs.system}".default
   ]);
 }
