@@ -71,13 +71,12 @@
     steam
     chromium
     google-chrome
-    qutebrowser
     telegram-desktop
     lutris
     qbittorrent
     obsidian
     bottles
 
-    inputs.zen-browser.packages."${pkgs.system}".default
+    inputs.zen-browser.packages."${pkgs.system}".twilight-official
   ]);
 }

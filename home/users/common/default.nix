@@ -83,7 +83,6 @@
     typst
     tinymist
 
-    pgadmin4
     spoofdpi
     yazi
     ffmpeg
@@ -95,7 +94,6 @@
     uv
     (python3.withPackages (python-pkgs:
       with python-pkgs; [
-        jupyterlab
         matplotlib
         pandas
         numpy
