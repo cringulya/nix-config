@@ -10,6 +10,7 @@
     ../../modules/neomutt
     ../../modules/neovim
     ../../modules/neovide
+    ../../modules/ghostty
     ../../modules/fish
     ../../modules/zsh
     ../../modules/clangd-format
@@ -41,6 +42,9 @@
     fzf
     fd
     todo
+    bat
+    eza
+    dust
     ripgrep
     starship
     wget

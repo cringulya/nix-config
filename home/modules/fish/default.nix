@@ -4,11 +4,13 @@
   programs.fish = {
     enable = true;
     shellAliases = {
+      ls = "eza --icons --group-directories-first";
       ll = "ls -l";
       vi = "nvim";
       vif = "nvim $(fzf)";
       py = "python3";
       cd = "z";
+      cat = "bat";
       nshell = "nix-shell --command fish";
     };
     interactiveShellInit = ''

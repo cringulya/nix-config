@@ -2,7 +2,7 @@
 
 {
   stylix.enable = true;
-  stylix.image = "${../../wallpapers/nix-catgirl.png}";
+  stylix.image = "${../../wallpapers/a_cartoon_of_a_woman_with_long_hair.jpg}";
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
   # stylix.base16Scheme = "${./themes/blueberry.yaml}";
 
