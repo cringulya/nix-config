@@ -38,13 +38,13 @@
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs username; system = "x86_64-linux"; };
         modules = [
+          ./core/nixos
           inputs.stylix.nixosModules.stylix
           {
             nixpkgs.overlays = [
               inputs.hyprpanel.overlay
             ];
           }
-          ./core/nixos
           inputs.home-manager.nixosModules.home-manager
           {
             home-manager = {

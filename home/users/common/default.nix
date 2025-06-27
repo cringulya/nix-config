@@ -1,9 +1,11 @@
-{ pkgs, inputs, ... }:
+{ pkgs, system, inputs, ... }:
 
 {
   programs.home-manager.enable = true;
 
   imports = [
+    ./email.nix
+    ../../modules/aerc
     ../../modules/zathura
     ../../modules/starship
     ../../modules/syncthing

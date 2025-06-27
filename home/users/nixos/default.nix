@@ -37,7 +37,6 @@
   };
 
   systemd.user.startServices = "sd-switch";
-  services.mbsync.enable = true;
 
   home.packages = (with pkgs; [
     neofetch
@@ -77,6 +76,6 @@
     obsidian
     bottles
 
-    inputs.zen-browser.packages."${pkgs.system}".twilight-official
+    inputs.zen-browser.packages."${pkgs.system}".twilight
   ]);
 }
