@@ -11,11 +11,10 @@
   programs.aerc = {
     enable = true;
     extraConfig = {
-      compose.address-book-cmd = ''
-        sh -c "abook --mutt-query '%s' \
-        | fzf --delimiter='\t' --with-nth=1,2 \
-        | cut -f1"
-      '';
+      compose = {
+        address-book-cmd = "abook --mutt-query '%s'";
+        address-completion = true;
+      };
       general.unsafe-accounts-conf = true;
       filters = {
         "text/plain" = "colorize";
