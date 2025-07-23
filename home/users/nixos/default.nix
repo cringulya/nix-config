@@ -60,6 +60,8 @@
 
     obs-studio
     openrgb-with-all-plugins
+    openvpn
+    networkmanager-openvpn
     firefox
     vesktop
     webcord
