@@ -3,8 +3,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
-    "$term" = "ghostty";
-    "$file" = "ghostty -e yazi";
+    "$term" = "kitty";
+    "$file" = "kitty -- yazi";
     "$editor" = "neovide";
     "$browser" = "zen";
 
