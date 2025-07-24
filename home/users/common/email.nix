@@ -9,17 +9,6 @@
     pass
   ];
 
-  services.mbsync = {
-    enable = true;
-    postExec = "${pkgs.writeShellScript "mbsync-notify" ''
-      NEW=$(find ~/Maildir -type f -path "*/new/*" | wc -l)
-      if [ "$NEW" -gt 0 ]; then
-        notify-send "📬 New Mail" "You have $NEW new messages"
-      fi
-    ''}";
-  };
-  programs.mbsync.enable = true;
-
   programs.msmtp.enable = true;
   programs.notmuch = {
     enable = true;
