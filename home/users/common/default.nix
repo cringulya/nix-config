@@ -62,7 +62,6 @@
     jdk
     maven
     gradle
-    devenv
     cachix
     hlint
     haskellPackages.stack

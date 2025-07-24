@@ -1,6 +1,7 @@
+{ pkgs, ... }:
 {
   programs.ghostty = {
-    enable = true;
+    enable = false;
     enableFishIntegration = true;
     settings = {
       theme = "lovelace";
