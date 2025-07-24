@@ -69,8 +69,7 @@
     cargo
     gnumake
     lldb
-    nodejs
-    nodePackages.npm
+    nodejs-slim
     cmake
     ghostscript
 
@@ -89,6 +88,7 @@
     tinymist
 
     spoofdpi
+    openvpn
     yazi
     ffmpeg
     man-pages # extra man pages

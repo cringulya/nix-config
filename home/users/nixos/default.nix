@@ -32,7 +32,6 @@
       fi
     ''}";
   };
-  programs.mbsync.enable = true;
 
   programs = {
     zsh = {

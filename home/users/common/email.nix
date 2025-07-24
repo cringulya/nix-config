@@ -4,12 +4,13 @@
   home.packages = with pkgs; [
     abook # Address book
     lynx # HTML viewer
-    msmtp # SMTP client
     notmuch # Optional: email indexer
+    isync
     pass
   ];
 
   programs.msmtp.enable = true;
+  programs.mbsync.enable = true;
   programs.notmuch = {
     enable = true;
     hooks = {

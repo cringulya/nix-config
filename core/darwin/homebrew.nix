@@ -15,6 +15,6 @@
       }
     ];
 
-    casks = [ "telegram" "spotify" "zen" "hammerspoon" ];
+    casks = [ "telegram" "spotify" "zen" "hammerspoon" "openvpn-connect" ];
   };
 }
