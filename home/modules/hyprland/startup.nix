@@ -13,7 +13,7 @@
       "hyprpanel"
       "Telegram"
       "spotify"
-      "ghostty"
+      "kitty"
     ];
   };
 }

@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  browser = "userapp-Twilight-VCQS92.desktop";
+  browser = "firefox.desktop";
 in
 {
   xdg.mimeApps.enable = true;

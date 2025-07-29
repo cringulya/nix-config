@@ -6,7 +6,6 @@
     networkmanager = { enable = true; };
     nameservers = [ "1.1.1.1" ];
     resolvconf.dnsSingleRequest = true;
-    enableStrongSwan = true;
     firewall = {
       enable = true;
       checkReversePath = false;

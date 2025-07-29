@@ -91,6 +91,9 @@
       enable = true;
       enableSSHSupport = true;
     };
+    openvpn3 = {
+      enable = true;
+    };
   };
 
   services.hardware.openrgb.enable = true;
