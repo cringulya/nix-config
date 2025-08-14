@@ -6,7 +6,7 @@
 
   programs.zsh = {
     # for vimtex zathura
-    initExtra = ''
+    initContent = ''
       export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
     '';
 

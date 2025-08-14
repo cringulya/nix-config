@@ -16,6 +16,12 @@
         address-completion = true;
       };
       general.unsafe-accounts-conf = true;
+      viewers = {
+        "text/html" = "open-url";
+      };
+      openers = {
+        "open-url" = if pkgs.stdenv.isDarwin then "open {url}" else "xdg-open {url}";
+      };
       filters = {
         "text/plain" = "colorize";
         "text/calendar" = "calendar";
@@ -27,7 +33,6 @@
         "#application/x-sh" = "bat -fP -l sh";
         "image/*" = "catimg -w $(tput cols) -";
       };
-
     };
   };
 }

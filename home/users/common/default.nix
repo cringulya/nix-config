@@ -95,6 +95,7 @@
     openvpn
     yazi
     ffmpeg
+    firefox
     man-pages # extra man pages
     libtool
     pandoc
