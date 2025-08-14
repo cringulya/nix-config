@@ -9,6 +9,7 @@
       "nm-applet"
       "wl-paste --primary --watch wl-copy --primary --clear"
       "swww-daemon"
+      "bash /home/artemson/sandbox/zapret-discord-youtube-linux/main_script.sh -nointeractive &"
       "sleep 1 && hyprlock"
       "hyprpanel"
       "Telegram"

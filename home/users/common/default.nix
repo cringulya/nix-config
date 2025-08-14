@@ -1,4 +1,8 @@
-{ pkgs, system, inputs, ... }:
+{ pkgs
+, system
+, inputs
+, ...
+}:
 
 {
   programs.home-manager.enable = true;
@@ -18,6 +22,7 @@
     ../../modules/clangd-format
     ../../modules/tmux
     ../../modules/kitty
+    ../../modules/ssh
     ../../modules/latexindent
     ../../modules/yazi
   ];
@@ -55,7 +60,6 @@
     tree
     nix-prefetch-git
     pokemon-colorscripts-mac
-
 
     ghc
     haskell-language-server
@@ -97,12 +101,13 @@
     asciidoctor-with-extensions
 
     uv
-    (python3.withPackages (python-pkgs:
-      with python-pkgs; [
+    (python3.withPackages (
+      python-pkgs: with python-pkgs; [
         matplotlib
         pandas
         numpy
-      ]))
+      ]
+    ))
 
     # inputs.nixvim-flake.packages.${pkgs.system}.default
     nerd-fonts.jetbrains-mono

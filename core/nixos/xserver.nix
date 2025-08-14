@@ -7,7 +7,9 @@
       xkb.layout = "us";
     };
 
-    libinput = { enable = true; };
+    libinput = {
+      enable = true;
+    };
 
     displayManager = {
       autoLogin = {
@@ -16,7 +18,4 @@
       };
     };
   };
-
-  # To prevent getting stuck at shutdown
-  systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 }

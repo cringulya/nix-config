@@ -25,18 +25,26 @@
     stylix.url = "github:danth/stylix";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
-  outputs = inputs@{ self, nixpkgs, nix-darwin, lanzaboote, home-manager, ... }:
+  outputs =
+    inputs@{ self
+    , nixpkgs
+    , nix-darwin
+    , lanzaboote
+    , home-manager
+    , ...
+    }:
     let
       username = "artemson";
       inherit (self) outputs;
     in
     {
       nixosConfigurations.abobus = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs outputs username; system = "x86_64-linux"; };
+        specialArgs = {
+          inherit inputs outputs username;
+          system = "x86_64-linux";
+        };
         modules = [
           ./core/nixos
           inputs.stylix.nixosModules.stylix

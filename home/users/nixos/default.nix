@@ -19,8 +19,7 @@
   };
 
   home.sessionVariables = {
-    STEAM_EXTRA_COMPAT_TOOLS_PATHS =
-      "\${HOME}/.steam/root/compatabilitytools.d";
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatabilitytools.d";
   };
 
   services.mbsync = {
@@ -48,45 +47,43 @@
 
   systemd.user.startServices = "sd-switch";
 
-  home.packages = (with pkgs; [
-    neofetch
+  home.packages = (
+    with pkgs;
+    [
+      neofetch
 
-    wlogout
-    hyprsunset
-    swww
-    grimblast
-    slurp
-    gdb
-    gf
-    docker
+      wlogout
+      hyprsunset
+      swww
+      grimblast
+      slurp
+      gdb
+      gf
+      docker
+      networkmanagerapplet
+      pgadmin4-desktopmode
 
-    clang-tools
-    antlr
+      clang-tools
+      antlr
 
-    mangohud
-    protonup
+      nomachine-client
+      spotify
 
-    spotify
-
-    obs-studio
-    openrgb-with-all-plugins
-    networkmanager-openvpn
-    firefox
-    vesktop
-    webcord
-    imv # image viewer
-    libnotify
-    mpv # video player
-    ncdu # disk space
-    steam
-    chromium
-    google-chrome
-    telegram-desktop
-    lutris
-    qbittorrent
-    obsidian
-    bottles
-
-    inputs.zen-browser.packages."${pkgs.system}".twilight
-  ]);
+      obs-studio
+      openrgb-with-all-plugins
+      firefox
+      vesktop
+      webcord
+      imv # image viewer
+      libnotify
+      mpv # video player
+      ncdu # disk space
+      steam
+      chromium
+      google-chrome
+      telegram-desktop
+      qbittorrent
+      obsidian
+    ]
+  );
 }

@@ -16,6 +16,7 @@
     pamixer
     nix-prefetch-git
     nix-index
+    nftables
 
     hyprpanel
     ags
