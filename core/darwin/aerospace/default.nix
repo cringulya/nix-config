@@ -32,8 +32,7 @@
       mode.main.binding = {
 
         alt-enter = "exec-and-forget /etc/profiles/per-user/artemson/bin/kitty";
-        alt-e =
-          "exec-and-forget open -a /Applications/Zen.app/Contents/MacOS/zen";
+        alt-e = "exec-and-forget open -a /Applications/Firefox.app/Contents/MacOS/firefox";
 
         alt-slash = "layout tiles horizontal vertical";
         alt-comma = "layout accordion horizontal vertical";
@@ -81,23 +80,44 @@
 
       mode.service.binding = {
 
-        esc = [ "reload-config" "mode main" ];
-        r = [ "flatten-workspace-tree" "mode main" ]; # reset layout
+        esc = [
+          "reload-config"
+          "mode main"
+        ];
+        r = [
+          "flatten-workspace-tree"
+          "mode main"
+        ]; # reset layout
         f = [
           "layout floating tiling"
           "mode main"
         ]; # Toggle between floating and tiling layout
-        backspace = [ "close-all-windows-but-current" "mode main" ];
+        backspace = [
+          "close-all-windows-but-current"
+          "mode main"
+        ];
 
-        alt-shift-h = [ "join-with left" "mode main" ];
-        alt-shift-j = [ "join-with down" "mode main" ];
-        alt-shift-k = [ "join-with up" "mode main" ];
-        alt-shift-l = [ "join-with right" "mode main" ];
+        alt-shift-h = [
+          "join-with left"
+          "mode main"
+        ];
+        alt-shift-j = [
+          "join-with down"
+          "mode main"
+        ];
+        alt-shift-k = [
+          "join-with up"
+          "mode main"
+        ];
+        alt-shift-l = [
+          "join-with right"
+          "mode main"
+        ];
       };
 
       on-window-detected = [
         {
-          "if".app-id = "app.zen-browser.zen";
+          "if".app-id = "org.mozila.firefox";
           run = "move-node-to-workspace 2";
         }
         {

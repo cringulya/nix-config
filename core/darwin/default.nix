@@ -1,4 +1,10 @@
-{ inputs, pkgs, system, ... }: {
+{ inputs
+, pkgs
+, system
+, ...
+}:
+
+{
 
   users.users.artemson = {
     name = "artemson";

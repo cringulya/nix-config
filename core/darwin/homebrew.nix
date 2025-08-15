@@ -18,7 +18,7 @@
     casks = [
       "telegram"
       "spotify"
-      "zen"
+      "firefox"
       "hammerspoon"
       "openvpn-connect"
       "nomachine"

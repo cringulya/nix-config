@@ -72,14 +72,14 @@
           system = "aarch64-darwin";
         };
         modules = [
+          inputs.home-manager.darwinModules.home-manager
           inputs.stylix.darwinModules.stylix
           ./core/darwin
-          inputs.home-manager.darwinModules.home-manager
           {
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.artemson = ./home/users/macbook;
+              users.artemson = import ./home/users/macbook;
               extraSpecialArgs = { inherit inputs; };
             };
           }
