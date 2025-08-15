@@ -11,7 +11,7 @@
     '';
 
     shellAliases = {
-      rebuild = "darwin-rebuild switch --flake ~/.config/nix";
+      rebuild = "sudo darwin-rebuild switch --flake ~/.config/nix";
     };
   };
   programs.fish = {
@@ -20,7 +20,7 @@
       export DBUS_SESSION_BUS_ADDRESS="unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET"
     '';
     shellAliases = {
-      rebuild = "darwin-rebuild switch --flake ~/.config/nix";
+      rebuild = "sudo darwin-rebuild switch --flake ~/.config/nix";
     };
   };
 

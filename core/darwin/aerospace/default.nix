@@ -117,7 +117,7 @@
 
       on-window-detected = [
         {
-          "if".app-id = "org.mozila.firefox";
+          "if".app-id = "org.mozilla.firefox";
           run = "move-node-to-workspace 2";
         }
         {
