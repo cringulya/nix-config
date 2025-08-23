@@ -20,8 +20,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
-
     stylix.url = "github:danth/stylix";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
@@ -48,11 +46,6 @@
         modules = [
           ./core/nixos
           inputs.stylix.nixosModules.stylix
-          {
-            nixpkgs.overlays = [
-              inputs.hyprpanel.overlay
-            ];
-          }
           inputs.home-manager.nixosModules.home-manager
           {
             home-manager = {

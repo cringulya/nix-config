@@ -2,7 +2,14 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, lib, username, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  lib,
+  username,
+  ...
+}:
 
 {
   imports = [
@@ -19,7 +26,7 @@
     ./audio.nix
     ./xserver.nix
     ./user.nix
-    ./zapret.nix
+    # ./zapret.nix
     inputs.lanzaboote.nixosModules.lanzaboote
   ];
 
@@ -36,12 +43,16 @@
 
   # This will add each flake input as a registry
   # To make nix3 commands consistent with your flake
-  nix.registry = (lib.mapAttrs (_: flake: { inherit flake; }))
-    ((lib.filterAttrs (_: lib.isType "flake")) inputs);
+  nix.registry = (lib.mapAttrs (_: flake: { inherit flake; })) (
+    (lib.filterAttrs (_: lib.isType "flake")) inputs
+  );
 
   nix = {
     settings = {
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       auto-optimise-store = true;
     };
     gc = {
