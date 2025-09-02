@@ -18,13 +18,8 @@
     nix-index
     nftables
 
-    hyprpanel
-    ags
-    libgtop
     bluez
-    dart-sass
     wl-clipboard
-    upower
     gvfs
   ];
 }

@@ -4,6 +4,7 @@
   imports = [
     ../common
     ../../modules/hyprland
+    ../../modules/hyprpanel
     ../../modules/waybar
     ../../modules/rofi
     ../../modules/btop
