@@ -296,7 +296,7 @@
       theme.bar.menus.menu.power.buttons.sleep.text = "#ffffff";
       theme.bar.buttons.modules.weather.icon_background = "#FFFFFF";
       theme.bar.menus.menu.power.buttons.shutdown.background = "#1A1A1A";
-      theme.bar.buttons.media.icon_background = "#FFFFFF";
+      theme.bar.buttons.media.icon_background = "#000000";
       theme.bar.menus.menu.power.buttons.logout.background = "#1A1A1A";
       theme.bar.buttons.modules.kbLayout.icon = "#ffffff";
       theme.bar.buttons.modules.ram.icon_background = "#ffffff";
