@@ -7,7 +7,10 @@
       enable = true;
       plugins = [ pkgs.networkmanager-openvpn ];
     };
-    nameservers = [ "10.76.4.153" ];
+    nameservers = [
+      "1.1.1.1"
+      "10.76.4.153"
+    ];
     search = [ "localdomain" ];
     resolvconf.dnsSingleRequest = true;
     firewall = {
