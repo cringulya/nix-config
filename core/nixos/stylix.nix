@@ -2,7 +2,7 @@
 
 {
   stylix.enable = true;
-  stylix.image = "${../../wallpapers/drawing.jpg}";
+  stylix.image = "${../../wallpapers/nix-catgirl.png}";
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
   # stylix.base16Scheme = "${./themes/blueberry.yaml}";
 
@@ -26,7 +26,9 @@
       name = "JetBrainsMono";
       package = pkgs.nerd-fonts.jetbrains-mono;
     };
-    sizes = { terminal = 18; };
+    sizes = {
+      terminal = 18;
+    };
   };
 
   stylix.polarity = "dark";

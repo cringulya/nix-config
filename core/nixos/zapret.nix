@@ -1,6 +1,6 @@
 {
   services.zapret = {
-    enable = true;
+    enable = false;
 
     udpSupport = true;
     udpPorts = [ "50000:65535" ];
