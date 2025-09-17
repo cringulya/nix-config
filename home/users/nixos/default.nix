@@ -85,6 +85,7 @@
       telegram-desktop
       qbittorrent
       obsidian
+      wine
     ]
   );
 }
