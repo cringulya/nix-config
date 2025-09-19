@@ -62,13 +62,13 @@
     pokemon-colorscripts-mac
 
     ghc
+    hlint
+    haskellPackages.stack
     haskell-language-server
     jdk
     maven
     gradle
     cachix
-    hlint
-    haskellPackages.stack
     ninja
     cargo
     gnumake

@@ -86,6 +86,7 @@
       qbittorrent
       obsidian
       wine
+      zoom-us
     ]
   );
 }

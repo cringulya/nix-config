@@ -14,11 +14,6 @@
       force_no_accel = 1;
     };
 
-    gestures = {
-      workspace_swipe = true;
-      workspace_swipe_fingers = 3;
-    };
-
     binds.allow_workspace_cycles = true;
 
     dwindle = {
