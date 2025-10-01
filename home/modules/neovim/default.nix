@@ -27,6 +27,7 @@
       tinymist
       cmake-language-server
       typescript-language-server
+      gopls
     ];
   };
 }

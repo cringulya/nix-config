@@ -23,6 +23,13 @@
     stylix.url = "github:danth/stylix";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      # IMPORTANT: we're using "libgbm" and is only available in unstable so ensure
+      # to have it up-to-date or simply don't specify the nixpkgs input
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

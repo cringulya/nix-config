@@ -7,6 +7,10 @@
       "office" = {
         hostname = "10.78.14.159";
         user = "ai.son";
+        extraOptions = {
+          RemoteCommand = "fish";
+          RequestTTY = "yes";
+        };
       };
     };
   };

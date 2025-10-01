@@ -33,7 +33,7 @@
     git = {
       enable = true;
       userName = "Artem Son";
-      userEmail = "s0sis0n@yandex.ru";
+      userEmail = "sonartem@icloud.com";
     };
 
     zoxide = {
@@ -61,6 +61,7 @@
     nix-prefetch-git
     pokemon-colorscripts-mac
 
+    go
     ghc
     hlint
     haskellPackages.stack
@@ -70,7 +71,7 @@
     gradle
     cachix
     ninja
-    cargo
+    rustup
     gnumake
     lldb
     nodejs-slim

@@ -2,6 +2,7 @@
 
 {
   imports = [
+    inputs.zen-browser.homeModules.twilight
     ../common
     ../../modules/hyprland
     ../../modules/hyprpanel
@@ -44,6 +45,7 @@
         rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/.config/nix";
       };
     };
+    zen-browser.enable = true;
   };
 
   systemd.user.startServices = "sd-switch";
@@ -60,6 +62,7 @@
       slurp
       gdb
       gf
+      qemu
       docker
       networkmanagerapplet
       pgadmin4-desktopmode
@@ -86,7 +89,6 @@
       qbittorrent
       obsidian
       wine
-      zoom-us
     ]
   );
 }
